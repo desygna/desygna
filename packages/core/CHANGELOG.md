@@ -1,5 +1,11 @@
 # @desygna/desygna-core
 
+## 0.2.0
+
+### Minor Changes
+
+- [`d7f7c74`](https://github.com/desygna/desygna/commit/d7f7c748fdecd7c4485ddb27298763fb5e80db91) Thanks [@kerimcet](https://github.com/kerimcet)! - Add `createTheme` utility
+
 ## 0.1.0
 
 ### Minor Changes
