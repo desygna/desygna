@@ -3,4 +3,5 @@
  */
 
 export * from './ThemeProvider';
+export * from './createTheme';
 export * from './types';
