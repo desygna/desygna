@@ -1,0 +1,11 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@2.1.1/schema.json",
+  "changelog": ["@changesets/changelog-github", { "repo": "desygna/desygna" }],
+  "commit": false,
+  "fixed": [],
+  "linked": [["@desygna/desygna*"]],
+  "access": "public",
+  "baseBranch": "main",
+  "updateInternalDependencies": "patch",
+  "ignore": []
+}
