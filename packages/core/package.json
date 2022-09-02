@@ -1,0 +1,32 @@
+{
+  "name": "@desygna/desygna-core",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Kerim Çetintaş <kerimcetintas@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "rollup": "rollup -c",
+    "rollup:watch": "rollup -c -w"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@styled-system/css": "^5.1.5",
+    "@types/styled-system": "^5.1.15",
+    "@types/styled-system__css": "^5.0.17",
+    "styled-system": "^5.1.5"
+  }
+}
