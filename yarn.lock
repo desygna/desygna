@@ -1665,9 +1665,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@desygna/desyna-core@workspace:packages/core":
+"@desygna/desygna-core@workspace:packages/core":
   version: 0.0.0-use.local
-  resolution: "@desygna/desyna-core@workspace:packages/core"
+  resolution: "@desygna/desygna-core@workspace:packages/core"
   dependencies:
     "@emotion/react": ^11.10.0
     "@emotion/styled": ^11.10.0
