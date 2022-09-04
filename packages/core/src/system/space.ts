@@ -1,13 +1,13 @@
 import * as CSS from "csstype";
 import {
   compose,
-  space as spaceSystem,
+  space as systemSpace,
   system,
   SpaceProps as SystemSpaceProps
 } from "styled-system";
 
 export const space = compose(
-  spaceSystem,
+  systemSpace,
   system({
     gap: {
       property: "gap",

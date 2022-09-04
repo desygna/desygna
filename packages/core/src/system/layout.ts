@@ -1,7 +1,7 @@
 import * as CSS from "csstype";
 import {
   system,
-  space as systemSpace,
+  layout as systemLayout,
   LayoutProps as SystemLayoutProps,
   compose
 } from "styled-system";
@@ -16,7 +16,7 @@ export type LayoutProps = SystemLayoutProps & {
 };
 
 export const layout = compose(
-  systemSpace,
+  systemLayout,
   system({
     w: {
       scale: "sizes",
