@@ -1,5 +1,11 @@
 # @desygna/desygna-core
 
+## 0.2.1
+
+### Patch Changes
+
+- [`bc8a3a8`](https://github.com/desygna/desygna/commit/bc8a3a89ebcadbe4670bd05fe2c424a1efb4b52e) Thanks [@kerimcet](https://github.com/kerimcet)! - Fix `space` and `layout` system utilities
+
 ## 0.2.0
 
 ### Minor Changes
