@@ -5,6 +5,8 @@
     "w": "yarn workspaces foreach --parallel --topological --verbose",
     "w:build": "yarn w --no-private run p:build",
     "w:brl": "yarn w --no-private run p:brl",
+    "docs:build": "cd docs && yarn && yarn build",
+    "docs:start": "cd docs && yarn && yarn start",
     "p:build": "cd $INIT_CWD && tsc && yarn p:rollup",
     "p:build:watch": "cd $INIT_CWD && yarn p:rollup --watch",
     "p:brl": "cd $INIT_CWD && barrelsby -d src -D -l all -q -e '.*(template|spec|__tests__|stories|private).*'",
