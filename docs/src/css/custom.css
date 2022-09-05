@@ -18,7 +18,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -27,4 +27,46 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.desygna-docs-flex-center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desygna-docs-container-sm {
+  max-width: 540px;
+  width: 100%;
+}
+
+.desygna-docs-container-md {
+  max-width: 720px;
+  width: 100%;
+}
+
+.desygna-docs-container-md {
+  max-width: 720px;
+  width: 100%;
+}
+
+.desygna-docs-mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.desygna-docs-my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.desygna-docs-my-sm {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.desygna-docs-my-md {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }

@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Desygna",
-  tagline: "🌱 Create your own plugin-based rich text editor easily",
+  tagline: "🎨 Makes styling components easy",
   url: "https://desygna.vercel.app",
   baseUrl: "/",
   onBrokenLinks: "throw",
