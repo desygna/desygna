@@ -1,5 +1,11 @@
 # @desygna/desygna-core
 
+## 0.3.0
+
+### Minor Changes
+
+- [`319be46`](https://github.com/desygna/desygna/commit/319be46c214d2b161e37943ba732469e9d725eba) Thanks [@kerimcet](https://github.com/kerimcet)! - Add `breakpointAliases` into `createTheme` utility
+
 ## 0.2.2
 
 ### Patch Changes
