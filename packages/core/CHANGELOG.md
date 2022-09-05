@@ -1,5 +1,11 @@
 # @desygna/desygna-core
 
+## 0.2.2
+
+### Patch Changes
+
+- [`51a47f0`](https://github.com/desygna/desygna/commit/51a47f076caaf1d06ae66335d09f8911c092718c) Thanks [@kerimcet](https://github.com/kerimcet)! - Fix `background` system utility - use default system
+
 ## 0.2.1
 
 ### Patch Changes
