@@ -11,7 +11,27 @@ const sidebars = {
       type: "category",
       label: "Getting Started",
       collapsed: false,
-      items: ["getting-started/installation"]
+      items: ["getting-started/installation", "getting-started/styled-api"]
+    },
+    {
+      type: "category",
+      label: "System",
+      collapsed: false,
+      items: [
+        "system/introduction",
+        "system/background",
+        "system/border",
+        "system/color",
+        "system/cursor",
+        "system/flexbox",
+        "system/grid",
+        "system/layout",
+        "system/position",
+        "system/shadow",
+        "system/space",
+        "system/typography"
+      ]
+    },
     }
   ]
 };
