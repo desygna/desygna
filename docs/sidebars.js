@@ -32,6 +32,12 @@ const sidebars = {
         "system/typography"
       ]
     },
+    {
+      type: "category",
+      label: "Utilities",
+      collapsed: false,
+      items: ["utilities/compose", "utilities/compose-all", "utilities/variant"]
+    },
     }
   ]
 };
