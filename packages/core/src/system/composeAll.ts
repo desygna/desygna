@@ -2,8 +2,8 @@ import { compose } from "styled-system";
 
 import { background } from "./background";
 import type { BackgroundProps } from "./background";
-import { borders } from "./borders";
-import type { BordersProps } from "./borders";
+import { border } from "./border";
+import type { BorderProps } from "./border";
 import { color } from "./color";
 import type { ColorProps } from "./color";
 import { cursor } from "./cursor";
@@ -24,7 +24,7 @@ import { typography } from "./typography";
 import type { TypographyProps } from "./typography";
 
 export type ComposedProps = BackgroundProps &
-  BordersProps &
+  BorderProps &
   ColorProps &
   CursorProps &
   FlexboxProps &
@@ -37,7 +37,7 @@ export type ComposedProps = BackgroundProps &
 
 export const composeAll = compose(
   background,
-  borders,
+  border,
   color,
   cursor,
   flexbox,
