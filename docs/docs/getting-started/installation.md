@@ -9,8 +9,8 @@ First of all, you need these peer dependencies installed:
 npm install @emotion/react@^11.10.0 @emotion/styled@^11.10.0
 ```
 
-Then you can install the core package:
+Then you can install the package:
 
 ```bash npm2yarn
-npm install @desygna/desygna-core
+npm install @desygna/desygna
 ```
