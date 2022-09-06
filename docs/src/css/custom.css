@@ -29,6 +29,12 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+table {
+  display: table !important;
+  table-layout: fixed;
+  width: 100%;
+}
+
 .desygna-docs-flex-center {
   width: 100%;
   display: flex;
@@ -69,4 +75,17 @@
 .desygna-docs-my-md {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.desygna-sidebar-soon-button {
+  background-color: #1a8870;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-left: auto;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  width: auto;
+  height: 24px;
 }

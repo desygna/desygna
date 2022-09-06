@@ -38,6 +38,11 @@ const sidebars = {
       collapsed: false,
       items: ["utilities/compose", "utilities/compose-all", "utilities/variant"]
     },
+    {
+      type: "html",
+      value:
+        "<div class='theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__link'>Components <button class='desygna-sidebar-soon-button'>soon</button></div>",
+      defaultStyle: true
     }
   ]
 };
