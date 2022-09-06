@@ -1665,7 +1665,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@desygna/desygna-core@workspace:packages/core":
+"@desygna/desygna-core@0.3.0, @desygna/desygna-core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-core@workspace:packages/core"
   dependencies:
@@ -1675,6 +1675,19 @@ __metadata:
     "@types/styled-system": ^5.1.15
     "@types/styled-system__css": ^5.0.17
     styled-system: ^5.1.5
+  peerDependencies:
+    "@emotion/react": ^11.10.0
+    "@emotion/styled": ^11.10.0
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  languageName: unknown
+  linkType: soft
+
+"@desygna/desygna@workspace:packages/desygna":
+  version: 0.0.0-use.local
+  resolution: "@desygna/desygna@workspace:packages/desygna"
+  dependencies:
+    "@desygna/desygna-core": 0.3.0
   peerDependencies:
     "@emotion/react": ^11.10.0
     "@emotion/styled": ^11.10.0
