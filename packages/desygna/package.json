@@ -1,6 +1,6 @@
 {
   "name": "@desygna/desygna",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "author": "Kerim Çetintaş <kerimcetintas@gmail.com>",
   "license": "MIT",
@@ -22,6 +22,6 @@
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
-    "@desygna/desygna-core": "0.3.0"
+    "@desygna/desygna-core": "1.0.0"
   }
 }
