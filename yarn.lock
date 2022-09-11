@@ -1665,32 +1665,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@desygna/desygna-box@1.1.0, @desygna/desygna-box@workspace:packages/components/box":
+"@desygna/desygna-box@1.2.0, @desygna/desygna-box@workspace:packages/components/box":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-box@workspace:packages/components/box"
   dependencies:
-    "@desygna/desygna-core": 1.1.0
+    "@desygna/desygna-core": 1.2.0
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-button@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@desygna/desygna-button@npm:1.1.0"
-  dependencies:
-    "@desygna/desygna-core": 1.1.0
-  checksum: e410c3b9e5b22e61931de353a61eefd92e2e422eaaef12d0f50b7b0d7020bf0f2edf54f53e0195ec43f1964b588dfa3217d905346745289d180db54e63b10414
-  languageName: node
-  linkType: hard
-
-"@desygna/desygna-button@workspace:packages/components/button":
+"@desygna/desygna-button@1.2.0, @desygna/desygna-button@workspace:packages/components/button":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-button@workspace:packages/components/button"
   dependencies:
-    "@desygna/desygna-core": 1.1.0
+    "@desygna/desygna-core": 1.2.0
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-core@1.1.0, @desygna/desygna-core@workspace:packages/core":
+"@desygna/desygna-core@1.2.0, @desygna/desygna-core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-core@workspace:packages/core"
   dependencies:
@@ -1712,9 +1703,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@desygna/desygna@workspace:packages/desygna"
   dependencies:
-    "@desygna/desygna-box": 1.1.0
-    "@desygna/desygna-button": 1.1.0
-    "@desygna/desygna-core": 1.1.0
+    "@desygna/desygna-box": 1.2.0
+    "@desygna/desygna-button": 1.2.0
+    "@desygna/desygna-core": 1.2.0
   peerDependencies:
     "@emotion/react": ^11.10.0
     "@emotion/styled": ^11.10.0
