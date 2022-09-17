@@ -1,5 +1,11 @@
 # @desygna/desygna-core
 
+## 1.3.1
+
+### Patch Changes
+
+- [`d01788b`](https://github.com/desygna/desygna/commit/d01788bfffc66119e4b56dbcc37c100496f66387) Thanks [@kerimcet](https://github.com/kerimcet)! - Fix `color` system
+
 ## 1.3.0
 
 ### Minor Changes
