@@ -1,5 +1,11 @@
 # @desygna/desygna-core
 
+## 1.4.1
+
+### Patch Changes
+
+- [`1e4915c`](https://github.com/desygna/desygna/commit/1e4915c5bb1d5643178451a3a9b280728adb1a79) Thanks [@kerimcet](https://github.com/kerimcet)! - Fix tsconfig
+
 ## 1.4.0
 
 ### Minor Changes
