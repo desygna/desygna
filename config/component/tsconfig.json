@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "react",
-    "noEmit": true,
-    "allowSyntheticDefaultImports": true
+    "outDir": "./dist",
+    "sourceMap": true,
+    "target": "es5",
+    "typeRoots": ["node_modules/@types", "types"]
   },
   "exclude": ["dist", "build", "node_modules"]
 }
