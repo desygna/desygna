@@ -1,5 +1,14 @@
 # @desygna/desygna-button
 
+## 1.4.2
+
+### Patch Changes
+
+- [`83a154b`](https://github.com/desygna/desygna/commit/83a154b48dcb93754cbb0a60778a624760b82ba4) Thanks [@kerimcet](https://github.com/kerimcet)! - Fix rollup config externals
+
+- Updated dependencies [[`83a154b`](https://github.com/desygna/desygna/commit/83a154b48dcb93754cbb0a60778a624760b82ba4)]:
+  - @desygna/desygna-core@1.4.2
+
 ## 1.4.1
 
 ### Patch Changes
