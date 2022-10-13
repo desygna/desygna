@@ -1,5 +1,18 @@
 # @desygna/desygna
 
+## 1.4.0
+
+### Minor Changes
+
+- [`36d1c79`](https://github.com/desygna/desygna/commit/36d1c7959cb0173dd965c1ba9e2a7378c14873d1) Thanks [@kerimcet](https://github.com/kerimcet)! - Fix `core` package tsconfig compiler options
+
+### Patch Changes
+
+- Updated dependencies [[`36d1c79`](https://github.com/desygna/desygna/commit/36d1c7959cb0173dd965c1ba9e2a7378c14873d1)]:
+  - @desygna/desygna-box@1.4.0
+  - @desygna/desygna-button@1.4.0
+  - @desygna/desygna-core@1.4.0
+
 ## 1.3.1
 
 ### Patch Changes
