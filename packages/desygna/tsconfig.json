@@ -1,8 +1,26 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "declaration": true,
-    "declarationDir": "./dist"
+    "declarationDir": "./dist",
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "target": "es5",
+    "typeRoots": ["node_modules/@types", "types"]
   },
-  "include": ["src"]
+  "include": ["src/**/*", "types/**/*"],
+  "exclude": [
+    "src/**/*.test.tsx",
+    "src/**/*.test.ts",
+    "dist",
+    "build",
+    "node_modules"
+  ]
 }
