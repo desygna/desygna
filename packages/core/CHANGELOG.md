@@ -1,5 +1,11 @@
 # @desygna/desygna-core
 
+## 1.4.3
+
+### Patch Changes
+
+- [`b22fbee`](https://github.com/desygna/desygna/commit/b22fbee8232d203d33fafa41362cc942f338dafb) Thanks [@kerimcet](https://github.com/kerimcet)! - Fix tsconfig compiler options
+
 ## 1.4.2
 
 ### Patch Changes
