@@ -54,9 +54,5 @@ export default {
       sourcemap: true
     }
   ],
-  external: [
-    ...Object.keys(PKG_JSON.dependencies || {}),
-    ...Object.keys(PKG_JSON.peerDependencies || {})
-  ],
   plugins
 };
