@@ -1,5 +1,18 @@
 # @desygna/desygna
 
+## 1.5.0
+
+### Minor Changes
+
+- [`fd06880`](https://github.com/desygna/desygna/commit/fd0688063abddcab638af752eda9a51045bb742c) Thanks [@kerimcet](https://github.com/kerimcet)! - Fix rollup configs & type autocompletion
+
+### Patch Changes
+
+- Updated dependencies [[`fd06880`](https://github.com/desygna/desygna/commit/fd0688063abddcab638af752eda9a51045bb742c)]:
+  - @desygna/desygna-box@1.5.0
+  - @desygna/desygna-button@1.5.0
+  - @desygna/desygna-core@1.5.0
+
 ## 1.4.3
 
 ### Patch Changes
