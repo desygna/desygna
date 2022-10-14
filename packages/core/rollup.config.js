@@ -13,7 +13,6 @@ const plugins = [
   external({
     includeDependencies: true
   }),
-  commonjs(),
   typescript({
     typescript: ts,
     include: ["src/**/*"],
@@ -27,6 +26,7 @@ const plugins = [
     ],
     useTsconfigDeclarationDir: true
   }),
+  commonjs(),
   babel({
     rootMode: "upward",
     extensions: [".ts", ".tsx", ".js", ".jsx"],
