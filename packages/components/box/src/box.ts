@@ -6,6 +6,8 @@ import {
   AsProp
 } from "@desygna/desygna-core";
 
-export type BoxProps = HTMLAttributes<HTMLDivElement> & ComposedProps & AsProp;
+export type BoxComponentProps = HTMLAttributes<HTMLDivElement> &
+  ComposedProps &
+  AsProp;
 
-export const Box = styled.div<BoxProps>(composeAll);
+export const Box = styled.div<BoxComponentProps>(composeAll);
