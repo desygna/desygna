@@ -1,5 +1,14 @@
 # @desygna/desygna-button
 
+## 1.5.2
+
+### Patch Changes
+
+- [`a23bfb5`](https://github.com/desygna/desygna/commit/a23bfb58d3d46c14f05201648d4a952b8cc06a7b) Thanks [@kerimcet](https://github.com/kerimcet)! - Fix `compose` helper export
+
+- Updated dependencies [[`a23bfb5`](https://github.com/desygna/desygna/commit/a23bfb58d3d46c14f05201648d4a952b8cc06a7b)]:
+  - @desygna/desygna-core@1.5.2
+
 ## 1.5.1
 
 ### Patch Changes
