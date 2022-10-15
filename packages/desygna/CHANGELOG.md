@@ -1,5 +1,21 @@
 # @desygna/desygna
 
+## 2.0.1
+
+### Patch Changes
+
+- [`41c9dd0`](https://github.com/desygna/desygna/commit/41c9dd00e778969cb8d420f0f039cad83d2bb550) Thanks [@kerimcet](https://github.com/kerimcet)! - New component exports
+
+- Updated dependencies [[`41c9dd0`](https://github.com/desygna/desygna/commit/41c9dd00e778969cb8d420f0f039cad83d2bb550)]:
+  - @desygna/desygna-absolute@2.0.1
+  - @desygna/desygna-box@2.0.1
+  - @desygna/desygna-button@2.0.1
+  - @desygna/desygna-flex@2.0.1
+  - @desygna/desygna-grid@2.0.1
+  - @desygna/desygna-paragraph@2.0.1
+  - @desygna/desygna-span@2.0.1
+  - @desygna/desygna-core@2.0.1
+
 ## 2.0.0
 
 ### Major Changes
