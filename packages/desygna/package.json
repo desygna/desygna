@@ -20,8 +20,13 @@
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
+    "@desygna/desygna-absolute": "0.0.0-beta.0",
     "@desygna/desygna-box": "1.5.2",
     "@desygna/desygna-button": "1.5.2",
-    "@desygna/desygna-core": "1.5.2"
+    "@desygna/desygna-core": "1.5.2",
+    "@desygna/desygna-flex": "0.0.0-beta.0",
+    "@desygna/desygna-grid": "0.0.0-beta.0",
+    "@desygna/desygna-paragraph": "0.0.0-beta.0",
+    "@desygna/desygna-span": "0.0.0-beta.0"
   }
 }

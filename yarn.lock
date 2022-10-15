@@ -1665,7 +1665,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@desygna/desygna-absolute@workspace:packages/components/absolute":
+"@desygna/desygna-absolute@0.0.0-beta.0, @desygna/desygna-absolute@workspace:packages/components/absolute":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-absolute@workspace:packages/components/absolute"
   dependencies:
@@ -1673,16 +1673,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-box@npm:1.5.2":
-  version: 1.5.2
-  resolution: "@desygna/desygna-box@npm:1.5.2"
-  dependencies:
-    "@desygna/desygna-core": 1.5.2
-  checksum: b944e91216eba85f1035ec3db87cb68d785bfd45cf348729eefb6d8b8e705dfcae60f934ad188cb02f308c7ad70aec12dccd93ad4c724f1becbc235422949d1c
-  languageName: node
-  linkType: hard
-
-"@desygna/desygna-box@workspace:packages/components/box":
+"@desygna/desygna-box@1.5.2, @desygna/desygna-box@workspace:packages/components/box":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-box@workspace:packages/components/box"
   dependencies:
@@ -1690,16 +1681,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-button@npm:1.5.2":
-  version: 1.5.2
-  resolution: "@desygna/desygna-button@npm:1.5.2"
-  dependencies:
-    "@desygna/desygna-core": 1.5.2
-  checksum: 986669d0d0d3bb1e805b89a1978e5e4b692f21398f8be04e56818846efd44fb4a135b8a5904990a0b9f429acc76ef2fdd6c563e1134f2eef68cea1ee382ee066
-  languageName: node
-  linkType: hard
-
-"@desygna/desygna-button@workspace:packages/components/button":
+"@desygna/desygna-button@1.5.2, @desygna/desygna-button@workspace:packages/components/button":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-button@workspace:packages/components/button"
   dependencies:
@@ -1707,19 +1689,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-core@npm:1.5.2":
-  version: 1.5.2
-  resolution: "@desygna/desygna-core@npm:1.5.2"
-  peerDependencies:
-    "@emotion/react": ^11.10.0
-    "@emotion/styled": ^11.10.0
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: c1d3b1533f2ff49c3a79795ccab442e1cff00c9ba5325054d458ccf5b544bb32065b78743c436e8fdc08069cc10b96257600ced796146c381cb95a553d23cb88
-  languageName: node
-  linkType: hard
-
-"@desygna/desygna-core@workspace:packages/core":
+"@desygna/desygna-core@1.5.2, @desygna/desygna-core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-core@workspace:packages/core"
   dependencies:
@@ -1737,7 +1707,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-flex@workspace:packages/components/flex":
+"@desygna/desygna-flex@0.0.0-beta.0, @desygna/desygna-flex@workspace:packages/components/flex":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-flex@workspace:packages/components/flex"
   dependencies:
@@ -1745,7 +1715,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-grid@workspace:packages/components/grid":
+"@desygna/desygna-grid@0.0.0-beta.0, @desygna/desygna-grid@workspace:packages/components/grid":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-grid@workspace:packages/components/grid"
   dependencies:
@@ -1753,7 +1723,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-paragraph@workspace:packages/components/paragraph":
+"@desygna/desygna-paragraph@0.0.0-beta.0, @desygna/desygna-paragraph@workspace:packages/components/paragraph":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-paragraph@workspace:packages/components/paragraph"
   dependencies:
@@ -1761,7 +1731,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-span@workspace:packages/components/span":
+"@desygna/desygna-span@0.0.0-beta.0, @desygna/desygna-span@workspace:packages/components/span":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-span@workspace:packages/components/span"
   dependencies:
@@ -1773,12 +1743,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@desygna/desygna@workspace:packages/desygna"
   dependencies:
+    "@desygna/desygna-absolute": 0.0.0-beta.0
     "@desygna/desygna-box": 1.5.2
     "@desygna/desygna-button": 1.5.2
     "@desygna/desygna-core": 1.5.2
+    "@desygna/desygna-flex": 0.0.0-beta.0
+    "@desygna/desygna-grid": 0.0.0-beta.0
+    "@desygna/desygna-paragraph": 0.0.0-beta.0
+    "@desygna/desygna-span": 0.0.0-beta.0
   peerDependencies:
-    "@emotion/react": ^11.10.0
-    "@emotion/styled": ^11.10.0
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   languageName: unknown
