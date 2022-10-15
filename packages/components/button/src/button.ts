@@ -6,8 +6,8 @@ import {
   AsProp
 } from "@desygna/desygna-core";
 
-export type ButtonProps = HTMLAttributes<HTMLButtonElement> &
+export type ButtonComponentProps = HTMLAttributes<HTMLButtonElement> &
   ComposedProps &
   AsProp;
 
-export const Button = styled.div<ButtonProps>(composeAll);
+export const Button = styled.button<ButtonComponentProps>(composeAll);
