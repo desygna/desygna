@@ -3,16 +3,31 @@ import {
   system,
   layout as systemLayout,
   LayoutProps as SystemLayoutProps,
-  compose
+  compose,
+  ResponsiveValue,
+  TLengthStyledSystem,
+  Theme
 } from "styled-system";
 
 export type LayoutProps = SystemLayoutProps & {
-  w?: CSS.Properties["width"];
-  h?: CSS.Properties["height"];
-  minW?: CSS.Properties["minWidth"];
-  maxW?: CSS.Properties["maxWidth"];
-  minH?: CSS.Properties["minHeight"];
-  maxH?: CSS.Properties["maxHeight"];
+  w?:
+    | CSS.Properties["width"]
+    | ResponsiveValue<CSS.Property.Width<TLengthStyledSystem>, Theme>;
+  h?:
+    | CSS.Properties["height"]
+    | ResponsiveValue<CSS.Property.Width<TLengthStyledSystem>, Theme>;
+  minW?:
+    | CSS.Properties["minWidth"]
+    | ResponsiveValue<CSS.Property.Width<TLengthStyledSystem>, Theme>;
+  maxW?:
+    | CSS.Properties["maxWidth"]
+    | ResponsiveValue<CSS.Property.Width<TLengthStyledSystem>, Theme>;
+  minH?:
+    | CSS.Properties["minHeight"]
+    | ResponsiveValue<CSS.Property.Width<TLengthStyledSystem>, Theme>;
+  maxH?:
+    | CSS.Properties["maxHeight"]
+    | ResponsiveValue<CSS.Property.Width<TLengthStyledSystem>, Theme>;
 };
 
 export const layout = compose(

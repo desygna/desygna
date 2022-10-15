@@ -3,7 +3,10 @@ import {
   compose,
   space as systemSpace,
   system,
-  SpaceProps as SystemSpaceProps
+  SpaceProps as SystemSpaceProps,
+  ResponsiveValue,
+  TLengthStyledSystem,
+  Theme
 } from "styled-system";
 
 export const space = compose(
@@ -17,5 +20,7 @@ export const space = compose(
 );
 
 export type SpaceProps = SystemSpaceProps & {
-  gap?: CSS.Properties["gap"];
+  gap?:
+    | CSS.Properties["gap"]
+    | ResponsiveValue<CSS.Property.Gap<TLengthStyledSystem>, Theme>;
 };
