@@ -1,5 +1,16 @@
 # @desygna/desygna
 
+## 1.5.1
+
+### Patch Changes
+
+- [`adc3117`](https://github.com/desygna/desygna/commit/adc311794100bb19fc621c49021c4e68267124ac) Thanks [@kerimcet](https://github.com/kerimcet)! - Fix extended prop types
+
+- Updated dependencies [[`adc3117`](https://github.com/desygna/desygna/commit/adc311794100bb19fc621c49021c4e68267124ac)]:
+  - @desygna/desygna-box@1.5.1
+  - @desygna/desygna-button@1.5.1
+  - @desygna/desygna-core@1.5.1
+
 ## 1.5.0
 
 ### Minor Changes
