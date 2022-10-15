@@ -1,6 +1,6 @@
 {
   "name": "@desygna/desygna-span",
-  "version": "0.0.0-beta.0",
+  "version": "2.0.0",
   "description": "",
   "author": "Kerim Çetintaş <kerimcetintas@gmail.com>",
   "license": "MIT",
@@ -16,6 +16,6 @@
     "rollup:watch": "rollup -c -w"
   },
   "dependencies": {
-    "@desygna/desygna-core": "1.5.2"
+    "@desygna/desygna-core": "2.0.0"
   }
 }
