@@ -1,0 +1,21 @@
+{
+  "name": "@desygna/desygna-flex",
+  "version": "0.0.0-beta.0",
+  "description": "",
+  "author": "Kerim Çetintaş <kerimcetintas@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "rollup": "rollup -c",
+    "rollup:watch": "rollup -c -w"
+  },
+  "dependencies": {
+    "@desygna/desygna-core": "1.5.2"
+  }
+}
