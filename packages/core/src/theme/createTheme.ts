@@ -1,47 +1,27 @@
 import { DesygnaTheme } from "./types";
 
-export type CreateThemeType = DesygnaTheme & {
+export type CreateThemeType<T extends DesygnaTheme = DesygnaTheme> = {
+  [K in keyof T]: T[K];
+} & {
   breakpointAliases?: string[];
 };
 
-export function createTheme({
+export type CreateThemeReturnType<T extends DesygnaTheme = DesygnaTheme> = Omit<
+  CreateThemeType<T>,
+  "breakpointAliases"
+>;
+
+export function createTheme<T extends DesygnaTheme = DesygnaTheme>({
   breakpointAliases,
-  breakpoints,
-  borderRadius,
-  borderWidth,
-  colors,
-  fonts,
-  fontSizes,
-  fontWeights,
-  letterSpacings,
-  lineHeights,
-  sizes,
-  shadows,
-  space,
-  zIndices
-}: CreateThemeType): DesygnaTheme {
+  ...themeValues
+}: CreateThemeType<T>): CreateThemeReturnType<T> {
   if (breakpointAliases) {
     breakpointAliases.forEach((alias, index) => {
-      // @ts-ignore
-      breakpoints[alias] = breakpoints[index];
+      themeValues.breakpoints[alias] = themeValues.breakpoints[index];
     });
   }
 
-  const t: DesygnaTheme = {
-    breakpoints,
-    borderRadius,
-    borderWidth,
-    colors,
-    fonts,
-    fontSizes,
-    fontWeights,
-    letterSpacings,
-    lineHeights,
-    sizes,
-    shadows,
-    space,
-    zIndices
-  };
+  const theme: CreateThemeReturnType<T> = themeValues;
 
-  return t;
+  return theme;
 }
