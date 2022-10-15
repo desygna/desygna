@@ -16,8 +16,6 @@
     "rollup:watch": "rollup -c -w"
   },
   "peerDependencies": {
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
