@@ -6,6 +6,7 @@ export * from './asProp';
 export * from './background';
 export * from './border';
 export * from './color';
+export * from './compose';
 export * from './composeAll';
 export * from './css';
 export * from './cursor';
