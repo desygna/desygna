@@ -11,4 +11,7 @@ export type FlexComponentProps = HTMLAttributes<HTMLDivElement> &
   FlexboxProps &
   AsProp;
 
-export const Flex = styled.div<FlexComponentProps>(compose(flexbox));
+export const Flex = styled.div<FlexComponentProps>(
+  { display: "flex" },
+  compose(flexbox)
+);
