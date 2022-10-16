@@ -11,4 +11,7 @@ export type GridComponentProps = HTMLAttributes<HTMLDivElement> &
   GridProps &
   AsProp;
 
-export const Grid = styled.div<GridComponentProps>(compose(grid));
+export const Grid = styled.div<GridComponentProps>(
+  { display: "grid" },
+  compose(grid)
+);
