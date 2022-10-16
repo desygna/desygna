@@ -1,6 +1,6 @@
 {
   "name": "@desygna/desygna-grid",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "",
   "author": "Kerim Çetintaş <kerimcetintas@gmail.com>",
   "license": "MIT",
@@ -16,6 +16,6 @@
     "rollup:watch": "rollup -c -w"
   },
   "dependencies": {
-    "@desygna/desygna-core": "2.0.1"
+    "@desygna/desygna-core": "2.0.2"
   }
 }
