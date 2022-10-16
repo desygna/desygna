@@ -1,5 +1,14 @@
 # @desygna/desygna-flex
 
+## 2.0.2
+
+### Patch Changes
+
+- [`c979664`](https://github.com/desygna/desygna/commit/c979664361ff9b29fd25980508e745366399451c) Thanks [@kerimcet](https://github.com/kerimcet)! - Fix default display settings for `flex` and `grid`
+
+- Updated dependencies [[`c979664`](https://github.com/desygna/desygna/commit/c979664361ff9b29fd25980508e745366399451c)]:
+  - @desygna/desygna-core@2.0.2
+
 ## 2.0.1
 
 ### Patch Changes
