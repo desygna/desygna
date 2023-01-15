@@ -1,5 +1,11 @@
 # @desygna/desygna-core
 
+## 2.0.3
+
+### Patch Changes
+
+- [`b3bcd24`](https://github.com/desygna/desygna/commit/b3bcd24c76c63ede93c3c8940f5c17be93d40370) Thanks [@kerimcet](https://github.com/kerimcet)! - Update package dependencies
+
 ## 2.0.2
 
 ### Patch Changes
