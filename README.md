@@ -11,6 +11,10 @@ components.
 ### Installation
 
 ```bash
+// First, install peer dependencies
+npm install @emotion/react@^11.10.0 @emotion/styled@^11.10.0 styled-system@^5.1.5
+
+// Then install Desygna
 npm install @desygna/desygna
 ```
 
