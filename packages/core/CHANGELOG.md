@@ -1,5 +1,11 @@
 # @desygna/desygna-core
 
+## 3.0.0
+
+### Major Changes
+
+- [`af9852a`](https://github.com/desygna/desygna/commit/af9852aa7a9f1cea26e3ee198af4006051bfb774) Thanks [@kerimcet](https://github.com/kerimcet)! - Provide better typesafety on `system` APIs
+
 ## 2.0.3
 
 ### Patch Changes
