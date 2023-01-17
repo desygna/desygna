@@ -17,6 +17,7 @@ export function createTheme<T extends DesygnaTheme = DesygnaTheme>({
 }: CreateThemeType<T>): CreateThemeReturnType<T> {
   if (breakpointAliases) {
     breakpointAliases.forEach((alias, index) => {
+      // @ts-ignore
       themeValues.breakpoints[alias] = themeValues.breakpoints[index];
     });
   }
