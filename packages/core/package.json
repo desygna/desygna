@@ -19,14 +19,14 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "react-dom": ">=16.8.0",
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@styled-system/css": "^5.1.5",
     "@types/styled-system": "^5.1.15",
-    "@types/styled-system__css": "^5.0.17",
-    "styled-system": "^5.1.5"
+    "@types/styled-system__css": "^5.0.17"
   }
 }
