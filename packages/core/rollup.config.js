@@ -1,3 +1,4 @@
+import { DEFAULT_EXTENSIONS } from "@babel/core";
 import babel from "@rollup/plugin-babel";
 import typescript from "rollup-plugin-typescript2";
 import ts from "typescript";
@@ -13,6 +14,7 @@ const plugins = [
   external({
     includeDependencies: true
   }),
+  commonjs(),
   typescript({
     typescript: ts,
     include: ["src/**/*"],
@@ -28,12 +30,52 @@ const plugins = [
   }),
   commonjs(),
   babel({
-    rootMode: "upward",
-    extensions: [".ts", ".tsx", ".js", ".jsx"],
     babelHelpers: "runtime",
-    include: ["src/**/*"],
     exclude: /node_modules/,
-    skipPreflightCheck: "true"
+    presets: [
+      [
+        "@babel/preset-typescript",
+        {
+          isTSX: true,
+          allExtensions: true
+        }
+      ],
+      [
+        "@babel/preset-react",
+        {
+          development: false,
+          runtime: "automatic",
+          importSource: "@emotion/react"
+        }
+      ],
+      [
+        "@babel/preset-env",
+        {
+          modules: false,
+          useBuiltIns: "entry",
+          corejs: 3,
+          exclude: ["transform-typeof-symbol"],
+          loose: true,
+          targets: {
+            node: "current"
+          }
+        }
+      ]
+    ],
+    plugins: [
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          corejs: false,
+          helpers: true,
+          regenerator: true,
+          useESModules: true
+        }
+      ],
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread"
+    ],
+    extensions: [...DEFAULT_EXTENSIONS, ".ts", ".tsx"]
   }),
   url(),
   resolve(),
@@ -54,5 +96,6 @@ export default {
       sourcemap: true
     }
   ],
+  external: [/@babel\/runtime/],
   plugins
 };
