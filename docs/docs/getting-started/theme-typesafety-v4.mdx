@@ -1,0 +1,55 @@
+```ts
+/**
+ *
+ * To get typings in your code editor,
+ * you need to have a theme.ts file for your custom theme and a desygna.d.ts file
+ * for type definitions of the Desygna library.
+ *
+ * These files allow your editor to provide autocomplete suggestions and type-checking
+ * for your custom theme properties, making it easier to write type-safe components.
+ *
+ */
+import { $styled, shouldForwardProp } from "@desygna/desygna-core";
+
+export type CustomBoxProps = {
+  id?: string;
+  role?: string;
+  className?: string;
+  tabIndex?: number;
+};
+
+export const CustomBox = $styled("div", {
+  shouldForwardProp
+})<BoxProps>({
+  boxSizing: "border-box",
+  minWidth: 0,
+  transition: "all 0.2s ease"
+});
+
+/**
+ *
+ *   Now use the component in your app,
+ *   get type-checking and autocomplete for prop values like this:
+ *
+ *  "text" | "background" |
+ *  "primary.100" | "primary.200" | "primary.300" |
+ *  "accent.100" | "accent.200" | "accent.300" |
+ *  "neutral.100" | "neutral.200" | "neutral.300" |
+ *  "success.100" | "success.200" | "success.300" |
+ *  "warning.100" | "warning.200" | "warning.300" |
+ *  "error.100" | "error.200" | "error.300" |
+ *  "info.100" | "info.200" | "info.300" | ...
+ */
+
+function App() {
+  return (
+    <CustomBox
+      color="primary.100"
+      bg="primary.200"
+      borderColor="primary.300"
+      w="full"
+      h="full"
+    />
+  );
+}
+```

@@ -8,6 +8,11 @@ const sidebars = {
       items: ["desygna/introduction", "desygna/contributing"]
     },
     {
+      type: "doc",
+      id: "getting-started/v4-rc",
+      label: "v4-rc.1 notes (breaking changes)"
+    },
+    {
       type: "category",
       label: "Getting Started",
       collapsed: false,
