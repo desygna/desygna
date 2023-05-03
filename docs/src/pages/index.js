@@ -18,7 +18,17 @@ function HomepageHeader() {
           <Link className="button button--secondary button--lg" to="/docs">
             Getting Started
           </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/v4-rc"
+          >
+            Checkout v4-rc.1 🛠️
+          </Link>
         </div>
+        <p>
+          Stay tuned for the Desygna v4, <br /> we are coming with type
+          improvements!
+        </p>
       </div>
     </header>
   );
