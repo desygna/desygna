@@ -42,3 +42,38 @@ export const CommonSandpack = ({
     />
   );
 };
+
+export const CommonSandpackV4Rc1 = ({
+  files,
+  deps,
+  editorHeight = 800
+}: CommonSandpackProps) => {
+  return (
+    <Sandpack
+      theme={monokaiPro}
+      template="react-ts"
+      files={{
+        "/index.tsx": rootCode,
+        ...files
+      }}
+      customSetup={{
+        dependencies: {
+          react: "17.0.2",
+          "react-dom": "17.0.2",
+          "react-scripts": "4.0.3",
+          "@emotion/react": "^11.10.0",
+          "@emotion/styled": "^11.10.0",
+          "styled-system": "^5.1.5",
+          "@styled-system/should-forward-prop": "^5.1.5",
+          "@desygna/desygna-core": "4.0.0-rc.1",
+          ...deps
+        }
+      }}
+      options={{
+        showLineNumbers: true,
+        showInlineErrors: true,
+        editorHeight
+      }}
+    />
+  );
+};

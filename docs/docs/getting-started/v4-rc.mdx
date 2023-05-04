@@ -14,6 +14,8 @@ import ThemeDefinitionV4 from "./theme-definition-v4.mdx";
 import ThemeCustomizationV4 from "./theme-customization-v4.mdx";
 import ThemeTypesafetyV4 from "./theme-typesafety-v4.mdx";
 
+import { ThemeTypesafetyV4Sandpack } from "./theme-typesafety-v4.tsx";
+
 <TOCInline toc={toc} />
 
 ## Using v4-rc.1
@@ -47,21 +49,11 @@ autocomplete suggestions and type-checking for your custom theme properties,
 making it easier and faster to write type-safe components.
 
 <Tabs
-  defaultValue="file1"
-  values={[
-    { label: "theme.ts", value: "file1" },
-    { label: "desygna.d.ts", value: "file2" },
-    { label: "customBox.ts", value: "file3" }
-  ]}
+  defaultValue="sandpack"
+  values={[{ label: "v4-rc.1 example sandbox", value: "sandpack" }]}
 >
-  <TabItem value="file1">
-    <ThemeCustomizationV4 />
-  </TabItem>
-  <TabItem value="file2">
-    <ThemeDefinitionV4 />
-  </TabItem>
-  <TabItem value="file3">
-    <ThemeTypesafetyV4 />
+  <TabItem value="sandpack">
+    <ThemeTypesafetyV4Sandpack />
   </TabItem>
 </Tabs>
 
@@ -117,6 +109,8 @@ making it easier and faster to write type-safe components.
 ### `compose` has changed as `$compose`
 
 ### `composeAll` has changed as `$composeAll`
+
+### `css` has changed as `$css`
 
 ### `background` has changed as `$background`
 
