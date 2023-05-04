@@ -20,7 +20,7 @@ export type CustomBoxProps = {
 
 export const CustomBox = $styled("div", {
   shouldForwardProp
-})<BoxProps>({
+})<CustomBoxProps>({
   boxSizing: "border-box",
   minWidth: 0,
   transition: "all 0.2s ease"
@@ -43,13 +43,17 @@ export const CustomBox = $styled("div", {
 
 function App() {
   return (
-    <CustomBox
-      color="primary.100"
-      bg="primary.200"
-      borderColor="primary.300"
-      w="full"
-      h="full"
-    />
+    <DesygnaProvider>
+      <CustomBox
+        color="primary.100"
+        bg="primary.200"
+        borderColor="primary.300"
+        w="full"
+        h="full"
+      >
+        This is a custom box
+      </CustomBox>
+    </DesygnaProvider>
   );
 }
 ```
