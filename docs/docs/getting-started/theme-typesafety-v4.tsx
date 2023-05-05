@@ -136,16 +136,30 @@ export default function App() {
         </CustomBox>
         
         <CustomBox
-          c="neutral.300"
-          bg="neutral.100"
-          borderColor="neutral.200"
-          borderWidth="1px"
-          borderStyle="solid"
+          c={{
+            _: "neutral.300",
+            sm: "info.300",
+            md: "success.300",
+            lg: "error.300",
+            xl: "warning.300",
+          }}
+          bg={{
+            _: "neutral.100",
+            sm: "info.100",
+            md: "success.100",
+            lg: "error.100",
+            xl: "warning.100",
+          }}
           w="full"
           h="full"
-          padding="4px"
+          mt="36px"
+          padding="12px"
+          textAlign="center"
         >
-          This is a custom box
+          This is a responsive box. <br /> <br />
+          &larr; You can resize the panels to see changes by dragging from center of the code editor and the preview. 
+          <br /> <br />
+          Alternatively, you can click the button in the bottom right corner to see the sandbox.
         </CustomBox>
       </CustomBox>
     </DesygnaProvider>
