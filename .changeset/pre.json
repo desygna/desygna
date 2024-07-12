@@ -2,7 +2,17 @@
   "mode": "pre",
   "tag": "dev",
   "initialVersions": {
-    "@desygna/desygna-core": "3.0.0"
+    "@desygna/desygna-core": "3.0.0",
+    "@desygna/desygna-absolute": "3.0.0",
+    "@desygna/desygna-box": "3.0.0",
+    "@desygna/desygna-button": "3.0.0",
+    "@desygna/desygna-flex": "3.0.0",
+    "@desygna/desygna-grid": "3.0.0",
+    "@desygna/desygna-paragraph": "3.0.0",
+    "@desygna/desygna-span": "3.0.0",
+    "@desygna/desygna": "3.0.0"
   },
-  "changesets": []
+  "changesets": [
+    "pink-rabbits-enjoy"
+  ]
 }

@@ -1,5 +1,12 @@
 # @desygna/desygna-button
 
+## 4.0.0-dev.0
+
+### Patch Changes
+
+- Updated dependencies [[`5a08e7e`](https://github.com/desygna/desygna/commit/5a08e7e2c31f5f97770b98da216a31a4daddc6d1)]:
+  - @desygna/desygna-core@4.0.0-dev.0
+
 ## 3.0.0
 
 ### Major Changes
