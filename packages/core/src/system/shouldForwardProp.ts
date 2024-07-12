@@ -1,3 +1,3 @@
-import shouldForwardProp from "@styled-system/should-forward-prop";
+import _shouldForwardProp from "@styled-system/should-forward-prop";
 
-export const $shouldForwardProp = shouldForwardProp;
+export const shouldForwardProp = _shouldForwardProp;
