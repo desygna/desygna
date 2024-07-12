@@ -1,19 +1,62 @@
-import * as CSS from "csstype";
-import { ResponsiveProp } from "../types/ResponsiveProp";
-import { ThemeRecord } from "../types/ThemeRecord";
+export type DesygnaThemeRecord =
+  | string
+  | {
+      [key: string]: DesygnaThemeRecord;
+    };
 
 export interface DesygnaTheme {
-  breakpoints?: ResponsiveProp<CSS.Properties["width"]>;
-  borderRadius?: ThemeRecord<CSS.Properties["borderRadius"]>;
-  borderWidth?: ThemeRecord<CSS.Properties["borderWidth"]>;
-  colors?: ThemeRecord<CSS.Properties["color"]>;
-  fonts?: ThemeRecord<CSS.Properties["fontFamily"]>;
-  fontSizes?: ThemeRecord<CSS.Properties["fontSize"]>;
-  fontWeights?: ThemeRecord<CSS.Properties["fontWeight"]>;
-  letterSpacings?: ThemeRecord<CSS.Properties["letterSpacing"]>;
-  lineHeights?: ThemeRecord<CSS.Properties["lineHeight"]>;
-  sizes?: ThemeRecord<CSS.Properties["width"]>;
-  shadows?: ThemeRecord<CSS.Properties["boxShadow"]>;
-  space?: ThemeRecord<CSS.Properties["width"]>;
-  zIndices?: ThemeRecord<CSS.Properties["zIndex"]>;
+  animations?: {
+    [key: string]: string;
+  };
+  colors?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  breakpoints?: {
+    [key: string]: string;
+  };
+  mediaQueries?: {
+    [key: string]: string;
+  };
+  borders?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  borderWidths?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  borderStyles?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  fonts?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  fontSizes?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  fontWeights?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  lineHeights?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  letterSpacings?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  radii?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  shadows?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  sizes?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  spacings?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  transitions?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  zIndices?: {
+    [key: string]: DesygnaThemeRecord;
+  };
 }

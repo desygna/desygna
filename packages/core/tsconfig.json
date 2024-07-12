@@ -13,7 +13,7 @@
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
-    "typeRoots": ["../node_modules/@types", "types"],
+    "typeRoots": ["../node_modules/@types", "types/desygna"],
     "noEmit": true
   },
 

@@ -1,50 +1,41 @@
 import { compose } from "styled-system";
+import { $animation, type DesygnaSystemAnimationProps } from "./animation";
+import { $background, type DesygnaSystemBackgroundProps } from "./background";
+import { $border, type DesygnaSystemBorderProps } from "./border";
+import { $color, type DesygnaSystemColorProps } from "./color";
+import { $flexbox, type DesygnaSystemFlexboxProps } from "./flexbox";
+import { $grid, type DesygnaSystemGridProps } from "./grid";
+import { $layout, type DesygnaSystemLayoutProps } from "./layout";
+import { $position, type DesygnaSystemPositionProps } from "./position";
+import { $shadow, type DesygnaSystemShadowProps } from "./shadow";
+import { $space, type DesygnaSystemSpaceProps } from "./space";
+import { $typography, type DesygnaSystemTypographyProps } from "./typography";
+import { $cursor, DesygnaSystemCursorProps } from "./cursor";
 
-import { background } from "./background";
-import type { BackgroundProps } from "./background";
-import { border } from "./border";
-import type { BorderProps } from "./border";
-import { color } from "./color";
-import type { ColorProps } from "./color";
-import { cursor } from "./cursor";
-import type { CursorProps } from "./cursor";
-import { flexbox } from "./flexbox";
-import type { FlexboxProps } from "./flexbox";
-import { grid } from "./grid";
-import type { GridProps } from "./grid";
-import { layout } from "./layout";
-import type { LayoutProps } from "./layout";
-import { position } from "./position";
-import type { PositionProps } from "./position";
-import { shadow } from "./shadow";
-import type { ShadowProps } from "./shadow";
-import { space } from "./space";
-import type { SpaceProps } from "./space";
-import { typography } from "./typography";
-import type { TypographyProps } from "./typography";
+export type DesygnaComposedProps = DesygnaSystemAnimationProps &
+  DesygnaSystemBackgroundProps &
+  DesygnaSystemBorderProps &
+  DesygnaSystemColorProps &
+  DesygnaSystemCursorProps &
+  DesygnaSystemFlexboxProps &
+  DesygnaSystemGridProps &
+  DesygnaSystemLayoutProps &
+  DesygnaSystemPositionProps &
+  DesygnaSystemShadowProps &
+  DesygnaSystemSpaceProps &
+  DesygnaSystemTypographyProps;
 
-export type ComposedProps = BackgroundProps &
-  BorderProps &
-  ColorProps &
-  CursorProps &
-  FlexboxProps &
-  GridProps &
-  LayoutProps &
-  PositionProps &
-  ShadowProps &
-  SpaceProps &
-  TypographyProps;
-
-export const composeAll = compose(
-  background,
-  border,
-  color,
-  cursor,
-  flexbox,
-  grid,
-  layout,
-  position,
-  shadow,
-  space,
-  typography
+export const $composeAll = compose(
+  $animation,
+  $background,
+  $border,
+  $color,
+  $cursor,
+  $flexbox,
+  $grid,
+  $layout,
+  $position,
+  $shadow,
+  $space,
+  $typography
 );

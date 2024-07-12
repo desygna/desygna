@@ -18,6 +18,7 @@
   "peerDependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
+    "@styled-system/should-forward-prop": "^5.1.5",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "styled-system": "^5.1.5"
@@ -26,7 +27,9 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@styled-system/css": "^5.1.5",
+    "@styled-system/should-forward-prop": "^5.1.5",
     "@types/styled-system": "^5.1.15",
-    "@types/styled-system__css": "^5.0.17"
+    "@types/styled-system__css": "^5.0.17",
+    "@types/styled-system__should-forward-prop": "^5.1.4"
   }
 }

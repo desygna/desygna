@@ -1,14 +1,13 @@
-import * as CSS from "csstype";
-import { ResponsiveValue, system, Theme } from "styled-system";
+import type { Properties as CSSProp } from "csstype";
+import { system } from "styled-system";
+import { DesygnaGenericProp } from "../../types/desygna";
 
-export type CursorProps = {
-  cursor?:
-    | CSS.Properties["cursor"]
-    | ResponsiveValue<CSS.Property.Cursor, Theme>;
-};
-
-export const cursor = system({
+export const $cursor = system({
   cursor: {
     property: "cursor"
   }
 });
+
+export type DesygnaSystemCursorProps = {
+  cursor?: DesygnaGenericProp<CSSProp["cursor"]>;
+};

@@ -1,0 +1,8 @@
+{
+  "mode": "pre",
+  "tag": "dev",
+  "initialVersions": {
+    "@desygna/desygna-core": "3.0.0"
+  },
+  "changesets": []
+}

@@ -1,1 +1,3 @@
-export { compose } from "styled-system";
+import { compose as _compose } from "styled-system";
+
+export const $compose = _compose;
