@@ -1,17 +1,23 @@
 import { HTMLAttributes } from "react";
 import {
-  styled,
+  $styled,
   AsProp,
-  FlexboxProps,
-  flexbox,
-  compose
+  DesygnaSystemFlexboxProps,
+  $flexbox,
+  $compose,
+  $layout,
+  $space,
+  DesygnaSystemLayoutProps,
+  DesygnaSystemSpaceProps
 } from "@desygna/desygna-core";
 
-export type FlexComponentProps = HTMLAttributes<HTMLDivElement> &
-  FlexboxProps &
+export type DesygnaFlexComponentProps = HTMLAttributes<HTMLDivElement> &
+  DesygnaSystemFlexboxProps &
+  DesygnaSystemSpaceProps &
+  DesygnaSystemLayoutProps &
   AsProp;
 
-export const Flex = styled.div<FlexComponentProps>(
+export const Flex = $styled.div<DesygnaFlexComponentProps>(
   { display: "flex" },
-  compose(flexbox)
+  $compose($flexbox, $layout, $space)
 );

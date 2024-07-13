@@ -1,17 +1,23 @@
 import { HTMLAttributes } from "react";
 import {
-  styled,
+  $styled,
   AsProp,
-  GridProps,
-  grid,
-  compose
+  DesygnaSystemGridProps,
+  $grid,
+  $compose,
+  DesygnaSystemLayoutProps,
+  DesygnaSystemSpaceProps,
+  $layout,
+  $space
 } from "@desygna/desygna-core";
 
-export type GridComponentProps = HTMLAttributes<HTMLDivElement> &
-  GridProps &
+export type DesygnaGridComponentProps = HTMLAttributes<HTMLDivElement> &
+  DesygnaSystemGridProps &
+  DesygnaSystemLayoutProps &
+  DesygnaSystemSpaceProps &
   AsProp;
 
-export const Grid = styled.div<GridComponentProps>(
+export const Grid = $styled.div<DesygnaGridComponentProps>(
   { display: "grid" },
-  compose(grid)
+  $compose($grid, $layout, $space)
 );
