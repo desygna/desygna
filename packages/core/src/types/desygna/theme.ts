@@ -1,69 +1,69 @@
-import { Theme } from "@emotion/react";
+import { DesygnaTheme } from "../../theme";
 import { PathToStringProps, StringPathJoin } from "../../utils/misc/StringPath";
 
-export type DesygnaThemeBreakpointKey = Theme["breakpoints"];
+export type DesygnaThemeBreakpointKey = DesygnaTheme["breakpoints"];
 
 export type DesygnaThemeAnimation = StringPathJoin<
-  PathToStringProps<Theme["animations"]>,
+  PathToStringProps<DesygnaTheme["animations"]>,
   "."
 >;
 export type DesygnaThemeColor = StringPathJoin<
-  PathToStringProps<Theme["colors"]>,
+  PathToStringProps<DesygnaTheme["colors"]>,
   "."
 >;
 export type DesygnaThemeBorder = StringPathJoin<
-  PathToStringProps<Theme["borders"]>,
+  PathToStringProps<DesygnaTheme["borders"]>,
   "."
 >;
 export type DesygnaThemeBorderWidth = StringPathJoin<
-  PathToStringProps<Theme["borderWidths"]>,
+  PathToStringProps<DesygnaTheme["borderWidths"]>,
   "."
 >;
 export type DesygnaThemeBorderStyle = StringPathJoin<
-  PathToStringProps<Theme["borderStyles"]>,
+  PathToStringProps<DesygnaTheme["borderStyles"]>,
   "."
 >;
 export type DesygnaThemeFont = StringPathJoin<
-  PathToStringProps<Theme["fonts"]>,
+  PathToStringProps<DesygnaTheme["fonts"]>,
   "."
 >;
 export type DesygnaThemeFontSize = StringPathJoin<
-  PathToStringProps<Theme["fontSizes"]>,
+  PathToStringProps<DesygnaTheme["fontSizes"]>,
   "."
 >;
 export type DesygnaThemeFontWeight = StringPathJoin<
-  PathToStringProps<Theme["fontWeights"]>,
+  PathToStringProps<DesygnaTheme["fontWeights"]>,
   "."
 >;
 export type DesygnaThemeLineHeight = StringPathJoin<
-  PathToStringProps<Theme["lineHeights"]>,
+  PathToStringProps<DesygnaTheme["lineHeights"]>,
   "."
 >;
 export type DesygnaThemeLetterSpacing = StringPathJoin<
-  PathToStringProps<Theme["letterSpacings"]>,
+  PathToStringProps<DesygnaTheme["letterSpacings"]>,
   "."
 >;
 export type DesygnaThemeBorderRadius = StringPathJoin<
-  PathToStringProps<Theme["radii"]>,
+  PathToStringProps<DesygnaTheme["radii"]>,
   "."
 >;
 export type DesygnaThemeShadow = StringPathJoin<
-  PathToStringProps<Theme["shadows"]>,
+  PathToStringProps<DesygnaTheme["shadows"]>,
   "."
 >;
 export type DesygnaThemeSize = StringPathJoin<
-  PathToStringProps<Theme["sizes"]>,
+  PathToStringProps<DesygnaTheme["sizes"]>,
   "."
 >;
 export type DesygnaThemeSpace = StringPathJoin<
-  PathToStringProps<Theme["spacings"]>,
+  PathToStringProps<DesygnaTheme["spacings"]>,
   "."
 >;
 export type DesygnaThemeTransition = StringPathJoin<
-  PathToStringProps<Theme["transitions"]>,
+  PathToStringProps<DesygnaTheme["transitions"]>,
   "."
 >;
 export type DesygnaThemeZIndices = StringPathJoin<
-  PathToStringProps<Theme["zIndices"]>,
+  PathToStringProps<DesygnaTheme["zIndices"]>,
   "."
 >;
