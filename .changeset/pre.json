@@ -13,6 +13,8 @@
     "@desygna/desygna": "4.0.0-dev.0"
   },
   "changesets": [
-    "pink-rabbits-enjoy"
+    "grumpy-frogs-impress",
+    "pink-rabbits-enjoy",
+    "twelve-panthers-sin"
   ]
 }

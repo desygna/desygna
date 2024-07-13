@@ -1,5 +1,20 @@
 # @desygna/desygna-paragraph
 
+## 4.0.0-pre.1
+
+### Patch Changes
+
+- [`753eae9`](https://github.com/desygna/desygna/commit/753eae9e8c03da67371149bb12098f78da33f526) Thanks [@kerimcet](https://github.com/kerimcet)! - Update `types` field in `package.json` to point to `dist/src/index.d.ts`
+
+  Update `typeRoots` field in `tsconfig.json`
+
+  The $shouldForwardProp property has renamed to shouldForwardProp for ease of use.
+
+- [`753c092`](https://github.com/desygna/desygna/commit/753c0924ecaef4b1fe6890e130d7c5883a311d01) Thanks [@kerimcet](https://github.com/kerimcet)! - Migrate v4 APIs & refactor
+
+- Updated dependencies [[`753eae9`](https://github.com/desygna/desygna/commit/753eae9e8c03da67371149bb12098f78da33f526)]:
+  - @desygna/desygna-core@4.0.0-pre.1
+
 ## 4.0.0-dev.0
 
 ### Patch Changes
