@@ -1,5 +1,13 @@
 # @desygna/desygna-core
 
+## 4.0.0-pre.2
+
+### Patch Changes
+
+- [`aab08ff`](https://github.com/desygna/desygna/commit/aab08ffcf0631d196bc58b321d40f50e3b7ab755) Thanks [@kerimcet](https://github.com/kerimcet)! - Fix types from package.json
+
+- [`8ff2892`](https://github.com/desygna/desygna/commit/8ff289204e1af337c314e3a09ea37161ce70ee3b) Thanks [@kerimcet](https://github.com/kerimcet)! - Update core
+
 ## 4.0.0-pre.1
 
 ### Patch Changes

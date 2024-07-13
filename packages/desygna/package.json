@@ -1,6 +1,6 @@
 {
   "name": "@desygna/desygna",
-  "version": "4.0.0-pre.1",
+  "version": "4.0.0-pre.2",
   "description": "",
   "author": "Kerim Çetintaş <kerimcetintas@gmail.com>",
   "license": "MIT",
@@ -22,14 +22,14 @@
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
-    "@desygna/desygna-absolute": "4.0.0-pre.1",
-    "@desygna/desygna-box": "4.0.0-pre.1",
-    "@desygna/desygna-button": "4.0.0-pre.1",
-    "@desygna/desygna-core": "4.0.0-pre.1",
-    "@desygna/desygna-flex": "4.0.0-pre.1",
-    "@desygna/desygna-grid": "4.0.0-pre.1",
-    "@desygna/desygna-paragraph": "4.0.0-pre.1",
-    "@desygna/desygna-span": "4.0.0-pre.1"
+    "@desygna/desygna-absolute": "4.0.0-pre.2",
+    "@desygna/desygna-box": "4.0.0-pre.2",
+    "@desygna/desygna-button": "4.0.0-pre.2",
+    "@desygna/desygna-core": "4.0.0-pre.2",
+    "@desygna/desygna-flex": "4.0.0-pre.2",
+    "@desygna/desygna-grid": "4.0.0-pre.2",
+    "@desygna/desygna-paragraph": "4.0.0-pre.2",
+    "@desygna/desygna-span": "4.0.0-pre.2"
   },
   "devDependencies": {
     "@emotion/react": "^11.10.0",
