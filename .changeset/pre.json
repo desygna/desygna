@@ -1,6 +1,6 @@
 {
   "mode": "pre",
-  "tag": "dev",
+  "tag": "pre",
   "initialVersions": {
     "@desygna/desygna-absolute": "4.0.0-dev.0",
     "@desygna/desygna-box": "4.0.0-dev.0",
