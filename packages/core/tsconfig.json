@@ -17,6 +17,6 @@
     "noEmit": true
   },
 
-  "include": ["src/**/*", "types/**/*"],
+  "include": ["src/**/*", "types"],
   "exclude": [".storybook", "dist", "build", "node_modules"]
 }
