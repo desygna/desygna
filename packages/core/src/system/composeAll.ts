@@ -12,6 +12,23 @@ import { $space, type DesygnaSystemSpaceProps } from "./space";
 import { $typography, type DesygnaSystemTypographyProps } from "./typography";
 import { $cursor, DesygnaSystemCursorProps } from "./cursor";
 
+export function $composeAll() {
+  return compose(
+    $animation,
+    $background,
+    $border,
+    $color,
+    $cursor,
+    $flexbox,
+    $grid,
+    $layout,
+    $position,
+    $shadow,
+    $space,
+    $typography
+  );
+}
+
 export type DesygnaComposedProps = DesygnaSystemAnimationProps &
   DesygnaSystemBackgroundProps &
   DesygnaSystemBorderProps &
@@ -24,18 +41,3 @@ export type DesygnaComposedProps = DesygnaSystemAnimationProps &
   DesygnaSystemShadowProps &
   DesygnaSystemSpaceProps &
   DesygnaSystemTypographyProps;
-
-export const $composeAll = compose(
-  $animation,
-  $background,
-  $border,
-  $color,
-  $cursor,
-  $flexbox,
-  $grid,
-  $layout,
-  $position,
-  $shadow,
-  $space,
-  $typography
-);

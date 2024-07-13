@@ -1,6 +1,6 @@
-import type { Properties as CSSProp } from "csstype";
+import * as CSS from "csstype";
 import { system } from "styled-system";
-import { DesygnaGenericProp, DesygnaThemeShadow } from "../../types/desygna";
+import { DesygnaGenericProp, DesygnaThemeShadow } from "../types/desygna";
 
 export const $shadow = system({
   textShadow: {
@@ -14,6 +14,10 @@ export const $shadow = system({
 });
 
 export type DesygnaSystemShadowProps = {
-  textShadow?: DesygnaGenericProp<CSSProp["textShadow"] | DesygnaThemeShadow>;
-  boxShadow?: DesygnaGenericProp<CSSProp["boxShadow"] | DesygnaThemeShadow>;
+  textShadow?: DesygnaGenericProp<
+    CSS.Properties["textShadow"] | DesygnaThemeShadow
+  >;
+  boxShadow?: DesygnaGenericProp<
+    CSS.Properties["boxShadow"] | DesygnaThemeShadow
+  >;
 };

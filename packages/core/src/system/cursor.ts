@@ -1,6 +1,6 @@
-import type { Properties as CSSProp } from "csstype";
+import * as CSS from "csstype";
 import { system } from "styled-system";
-import { DesygnaGenericProp } from "../../types/desygna";
+import { DesygnaGenericProp } from "../types/desygna";
 
 export const $cursor = system({
   cursor: {
@@ -9,5 +9,5 @@ export const $cursor = system({
 });
 
 export type DesygnaSystemCursorProps = {
-  cursor?: DesygnaGenericProp<CSSProp["cursor"]>;
+  cursor?: DesygnaGenericProp<CSS.Properties["cursor"]>;
 };

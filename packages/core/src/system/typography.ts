@@ -1,4 +1,4 @@
-import type { Properties as CSSProp } from "csstype";
+import * as CSS from "csstype";
 import { system } from "styled-system";
 import {
   DesygnaGenericProp,
@@ -7,7 +7,7 @@ import {
   DesygnaThemeFontWeight,
   DesygnaThemeLetterSpacing,
   DesygnaThemeLineHeight
-} from "../../types/desygna";
+} from "../types/desygna";
 
 export const $typography = system({
   fontFamily: {
@@ -49,35 +49,43 @@ export const $typography = system({
 });
 
 export type DesygnaSystemTypographyProps = {
-  fontFamily?: DesygnaGenericProp<CSSProp["fontFamily"] | DesygnaThemeFont>;
+  fontFamily?: DesygnaGenericProp<
+    CSS.Properties["fontFamily"] | DesygnaThemeFont
+  >;
   fontSize?: DesygnaGenericProp<
-    CSSProp["fontSize"] | DesygnaThemeFontSize | number
+    CSS.Properties["fontSize"] | DesygnaThemeFontSize | number
   >;
   fontWeight?: DesygnaGenericProp<
-    CSSProp["fontWeight"] | DesygnaThemeFontWeight
+    CSS.Properties["fontWeight"] | DesygnaThemeFontWeight
   >;
   lineHeight?: DesygnaGenericProp<
-    CSSProp["lineHeight"] | DesygnaThemeLineHeight | number
+    CSS.Properties["lineHeight"] | DesygnaThemeLineHeight | number
   >;
   letterSpacing?: DesygnaGenericProp<
-    CSSProp["letterSpacing"] | DesygnaThemeLetterSpacing
+    CSS.Properties["letterSpacing"] | DesygnaThemeLetterSpacing
   >;
-  textAlign?: DesygnaGenericProp<CSSProp["textAlign"]>;
-  fontStyle?: DesygnaGenericProp<CSSProp["fontStyle"]>;
-  fontVariantNumeric?: DesygnaGenericProp<CSSProp["fontVariantNumeric"]>;
-  listStyleType?: DesygnaGenericProp<CSSProp["listStyle"]>;
-  listStylePosition?: DesygnaGenericProp<CSSProp["listStylePosition"]>;
-  textDecoration?: DesygnaGenericProp<CSSProp["textDecoration"]>;
-  textDecorationColor?: DesygnaGenericProp<CSSProp["textDecorationColor"]>;
-  textDecorationStyle?: DesygnaGenericProp<CSSProp["textDecorationStyle"]>;
+  textAlign?: DesygnaGenericProp<CSS.Properties["textAlign"]>;
+  fontStyle?: DesygnaGenericProp<CSS.Properties["fontStyle"]>;
+  fontVariantNumeric?: DesygnaGenericProp<CSS.Properties["fontVariantNumeric"]>;
+  listStyleType?: DesygnaGenericProp<CSS.Properties["listStyle"]>;
+  listStylePosition?: DesygnaGenericProp<CSS.Properties["listStylePosition"]>;
+  textDecoration?: DesygnaGenericProp<CSS.Properties["textDecoration"]>;
+  textDecorationColor?: DesygnaGenericProp<
+    CSS.Properties["textDecorationColor"]
+  >;
+  textDecorationStyle?: DesygnaGenericProp<
+    CSS.Properties["textDecorationStyle"]
+  >;
   textDecorationThickness?: DesygnaGenericProp<
-    CSSProp["textDecorationThickness"]
+    CSS.Properties["textDecorationThickness"]
   >;
-  textUnderlineOffset?: DesygnaGenericProp<CSSProp["textUnderlineOffset"]>;
-  textTransform?: DesygnaGenericProp<CSSProp["textTransform"]>;
-  textOverflow?: DesygnaGenericProp<CSSProp["textOverflow"]>;
-  textIndent?: DesygnaGenericProp<CSSProp["textIndent"]>;
-  verticalAlign?: DesygnaGenericProp<CSSProp["verticalAlign"]>;
-  whiteSpace?: DesygnaGenericProp<CSSProp["whiteSpace"]>;
-  wordBreak?: DesygnaGenericProp<CSSProp["wordBreak"]>;
+  textUnderlineOffset?: DesygnaGenericProp<
+    CSS.Properties["textUnderlineOffset"]
+  >;
+  textTransform?: DesygnaGenericProp<CSS.Properties["textTransform"]>;
+  textOverflow?: DesygnaGenericProp<CSS.Properties["textOverflow"]>;
+  textIndent?: DesygnaGenericProp<CSS.Properties["textIndent"]>;
+  verticalAlign?: DesygnaGenericProp<CSS.Properties["verticalAlign"]>;
+  whiteSpace?: DesygnaGenericProp<CSS.Properties["whiteSpace"]>;
+  wordBreak?: DesygnaGenericProp<CSS.Properties["wordBreak"]>;
 };

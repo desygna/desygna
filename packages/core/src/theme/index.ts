@@ -5,3 +5,5 @@
 export * from './createDesygnaTheme';
 export * from './ThemeProvider';
 export * from './types';
+export * from './useTheme';
+export * from './withTheme';

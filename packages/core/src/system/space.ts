@@ -1,6 +1,6 @@
-import type { Properties as CSSProp } from "csstype";
+import * as CSS from "csstype";
 import { system } from "styled-system";
-import { DesygnaGenericProp, DesygnaThemeSpace } from "../../types/desygna";
+import { DesygnaGenericProp, DesygnaThemeSpace } from "../types/desygna";
 
 export const $space = system({
   m: {
@@ -122,59 +122,87 @@ export const $space = system({
 });
 
 export type DesygnaSystemSpaceProps = {
-  m?: DesygnaGenericProp<CSSProp["margin"] | DesygnaThemeSpace | number>;
-  mt?: DesygnaGenericProp<CSSProp["marginTop"] | DesygnaThemeSpace | number>;
-  mb?: DesygnaGenericProp<CSSProp["marginBottom"] | DesygnaThemeSpace | number>;
-  mr?: DesygnaGenericProp<CSSProp["marginRight"] | DesygnaThemeSpace | number>;
-  ml?: DesygnaGenericProp<CSSProp["marginLeft"] | DesygnaThemeSpace | number>;
-  mx?: DesygnaGenericProp<CSSProp["marginRight"] | DesygnaThemeSpace | number>;
-  my?: DesygnaGenericProp<CSSProp["marginTop"] | DesygnaThemeSpace | number>;
-  p?: DesygnaGenericProp<CSSProp["padding"] | DesygnaThemeSpace | number>;
-  pt?: DesygnaGenericProp<CSSProp["paddingTop"] | DesygnaThemeSpace | number>;
-  pb?: DesygnaGenericProp<
-    CSSProp["paddingBottom"] | DesygnaThemeSpace | number
+  m?: DesygnaGenericProp<CSS.Properties["margin"] | DesygnaThemeSpace | number>;
+  mt?: DesygnaGenericProp<
+    CSS.Properties["marginTop"] | DesygnaThemeSpace | number
   >;
-  pr?: DesygnaGenericProp<CSSProp["paddingRight"] | DesygnaThemeSpace | number>;
-  pl?: DesygnaGenericProp<CSSProp["paddingLeft"] | DesygnaThemeSpace | number>;
-  px?: DesygnaGenericProp<CSSProp["paddingRight"] | DesygnaThemeSpace | number>;
-  py?: DesygnaGenericProp<CSSProp["paddingTop"] | DesygnaThemeSpace | number>;
-  margin?: DesygnaGenericProp<CSSProp["margin"] | DesygnaThemeSpace | number>;
+  mb?: DesygnaGenericProp<
+    CSS.Properties["marginBottom"] | DesygnaThemeSpace | number
+  >;
+  mr?: DesygnaGenericProp<
+    CSS.Properties["marginRight"] | DesygnaThemeSpace | number
+  >;
+  ml?: DesygnaGenericProp<
+    CSS.Properties["marginLeft"] | DesygnaThemeSpace | number
+  >;
+  mx?: DesygnaGenericProp<
+    CSS.Properties["marginRight"] | DesygnaThemeSpace | number
+  >;
+  my?: DesygnaGenericProp<
+    CSS.Properties["marginTop"] | DesygnaThemeSpace | number
+  >;
+  p?: DesygnaGenericProp<
+    CSS.Properties["padding"] | DesygnaThemeSpace | number
+  >;
+  pt?: DesygnaGenericProp<
+    CSS.Properties["paddingTop"] | DesygnaThemeSpace | number
+  >;
+  pb?: DesygnaGenericProp<
+    CSS.Properties["paddingBottom"] | DesygnaThemeSpace | number
+  >;
+  pr?: DesygnaGenericProp<
+    CSS.Properties["paddingRight"] | DesygnaThemeSpace | number
+  >;
+  pl?: DesygnaGenericProp<
+    CSS.Properties["paddingLeft"] | DesygnaThemeSpace | number
+  >;
+  px?: DesygnaGenericProp<
+    CSS.Properties["paddingRight"] | DesygnaThemeSpace | number
+  >;
+  py?: DesygnaGenericProp<
+    CSS.Properties["paddingTop"] | DesygnaThemeSpace | number
+  >;
+  margin?: DesygnaGenericProp<
+    CSS.Properties["margin"] | DesygnaThemeSpace | number
+  >;
   marginTop?: DesygnaGenericProp<
-    CSSProp["marginTop"] | DesygnaThemeSpace | number
+    CSS.Properties["marginTop"] | DesygnaThemeSpace | number
   >;
   marginBottom?: DesygnaGenericProp<
-    CSSProp["marginBottom"] | DesygnaThemeSpace | number
+    CSS.Properties["marginBottom"] | DesygnaThemeSpace | number
   >;
   marginRight?: DesygnaGenericProp<
-    CSSProp["marginRight"] | DesygnaThemeSpace | number
+    CSS.Properties["marginRight"] | DesygnaThemeSpace | number
   >;
   marginLeft?: DesygnaGenericProp<
-    CSSProp["marginLeft"] | DesygnaThemeSpace | number
+    CSS.Properties["marginLeft"] | DesygnaThemeSpace | number
   >;
   marginX?: DesygnaGenericProp<
-    CSSProp["marginRight"] | DesygnaThemeSpace | number
+    CSS.Properties["marginRight"] | DesygnaThemeSpace | number
   >;
   marginY?: DesygnaGenericProp<
-    CSSProp["marginTop"] | DesygnaThemeSpace | number
+    CSS.Properties["marginTop"] | DesygnaThemeSpace | number
   >;
-  padding?: DesygnaGenericProp<CSSProp["padding"] | DesygnaThemeSpace | number>;
+  padding?: DesygnaGenericProp<
+    CSS.Properties["padding"] | DesygnaThemeSpace | number
+  >;
   paddingTop?: DesygnaGenericProp<
-    CSSProp["paddingTop"] | DesygnaThemeSpace | number
+    CSS.Properties["paddingTop"] | DesygnaThemeSpace | number
   >;
   paddingBottom?: DesygnaGenericProp<
-    CSSProp["paddingBottom"] | DesygnaThemeSpace | number
+    CSS.Properties["paddingBottom"] | DesygnaThemeSpace | number
   >;
   paddingRight?: DesygnaGenericProp<
-    CSSProp["paddingRight"] | DesygnaThemeSpace | number
+    CSS.Properties["paddingRight"] | DesygnaThemeSpace | number
   >;
   paddingLeft?: DesygnaGenericProp<
-    CSSProp["paddingLeft"] | DesygnaThemeSpace | number
+    CSS.Properties["paddingLeft"] | DesygnaThemeSpace | number
   >;
   paddingX?: DesygnaGenericProp<
-    CSSProp["paddingRight"] | DesygnaThemeSpace | number
+    CSS.Properties["paddingRight"] | DesygnaThemeSpace | number
   >;
   paddingY?: DesygnaGenericProp<
-    CSSProp["paddingTop"] | DesygnaThemeSpace | number
+    CSS.Properties["paddingTop"] | DesygnaThemeSpace | number
   >;
-  gap?: DesygnaGenericProp<CSSProp["gap"] | DesygnaThemeSpace | number>;
+  gap?: DesygnaGenericProp<CSS.Properties["gap"] | DesygnaThemeSpace | number>;
 };

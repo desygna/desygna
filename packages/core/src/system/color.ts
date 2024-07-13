@@ -1,6 +1,6 @@
-import type { Properties as CSSProp } from "csstype";
+import * as CSS from "csstype";
 import { system } from "styled-system";
-import { DesygnaGenericProp, DesygnaThemeColor } from "../../types/desygna";
+import { DesygnaGenericProp, DesygnaThemeColor } from "../types/desygna";
 
 export const $color = system({
   c: {
@@ -22,11 +22,11 @@ export const $color = system({
 });
 
 export type DesygnaSystemColorProps = {
-  c?: DesygnaGenericProp<CSSProp["color"], DesygnaThemeColor>;
-  color?: DesygnaGenericProp<CSSProp["color"], DesygnaThemeColor>;
+  c?: DesygnaGenericProp<CSS.Properties["color"], DesygnaThemeColor>;
+  color?: DesygnaGenericProp<CSS.Properties["color"], DesygnaThemeColor>;
   backgroundColor?: DesygnaGenericProp<
-    CSSProp["backgroundColor"],
+    CSS.Properties["backgroundColor"],
     DesygnaThemeColor
   >;
-  bg?: DesygnaGenericProp<CSSProp["backgroundColor"], DesygnaThemeColor>;
+  bg?: DesygnaGenericProp<CSS.Properties["backgroundColor"], DesygnaThemeColor>;
 };

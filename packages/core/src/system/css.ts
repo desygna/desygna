@@ -1,3 +1,9 @@
-import { default as _css } from "@styled-system/css";
+import {
+  default as _css,
+  CssFunctionReturnType,
+  SystemStyleObject
+} from "@styled-system/css";
 
-export const $css = _css;
+export function $css(input?: SystemStyleObject): CssFunctionReturnType {
+  return _css(input);
+}

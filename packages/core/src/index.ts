@@ -5,3 +5,5 @@
 export * from './css/index';
 export * from './system/index';
 export * from './theme/index';
+export * from './types/index';
+export * from './utils/index';

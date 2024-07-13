@@ -1,10 +1,10 @@
-import type { Properties as CSSProp } from "csstype";
+import * as CSS from "csstype";
 import { system } from "styled-system";
 import {
   DesygnaGenericProp,
   DesygnaThemeAnimation,
   DesygnaThemeTransition
-} from "../../types/desygna";
+} from "../types/desygna";
 
 export const $animation = system({
   animation: {
@@ -30,14 +30,16 @@ export const $animation = system({
 });
 
 export type DesygnaSystemAnimationProps = {
-  animation?: DesygnaGenericProp<CSSProp["animation"] | DesygnaThemeAnimation>;
+  animation?: DesygnaGenericProp<
+    CSS.Properties["animation"] | DesygnaThemeAnimation
+  >;
   transition?: DesygnaGenericProp<
-    CSSProp["transition"] | DesygnaThemeTransition
+    CSS.Properties["transition"] | DesygnaThemeTransition
   >;
-  transitionProperty?: DesygnaGenericProp<CSSProp["transitionProperty"]>;
+  transitionProperty?: DesygnaGenericProp<CSS.Properties["transitionProperty"]>;
   transitionTimingFunction?: DesygnaGenericProp<
-    CSSProp["transitionTimingFunction"]
+    CSS.Properties["transitionTimingFunction"]
   >;
-  transitionDuration?: DesygnaGenericProp<CSSProp["transitionDuration"]>;
-  transitionDelay?: DesygnaGenericProp<CSSProp["transitionDelay"]>;
+  transitionDuration?: DesygnaGenericProp<CSS.Properties["transitionDuration"]>;
+  transitionDelay?: DesygnaGenericProp<CSS.Properties["transitionDelay"]>;
 };

@@ -1,10 +1,10 @@
-import type { Properties as CSSProp } from "csstype";
+import * as CSS from "csstype";
 import { system } from "styled-system";
 import {
   DesygnaGenericProp,
   DesygnaThemeColor,
   DesygnaThemeSize
-} from "../../types/desygna";
+} from "../types/desygna";
 
 export const $layout = system({
   width: {
@@ -98,64 +98,80 @@ export const $layout = system({
 });
 
 export type DesygnaSystemLayoutProps = {
-  width?: DesygnaGenericProp<CSSProp["width"] | DesygnaThemeSize | number>;
-  height?: DesygnaGenericProp<CSSProp["height"] | DesygnaThemeSize | number>;
-  w?: DesygnaGenericProp<CSSProp["width"] | DesygnaThemeSize | number>;
-  h?: DesygnaGenericProp<CSSProp["height"] | DesygnaThemeSize | number>;
+  width?: DesygnaGenericProp<
+    CSS.Properties["width"] | DesygnaThemeSize | number
+  >;
+  height?: DesygnaGenericProp<
+    CSS.Properties["height"] | DesygnaThemeSize | number
+  >;
+  w?: DesygnaGenericProp<CSS.Properties["width"] | DesygnaThemeSize | number>;
+  h?: DesygnaGenericProp<CSS.Properties["height"] | DesygnaThemeSize | number>;
   minWidth?: DesygnaGenericProp<
-    CSSProp["minWidth"] | DesygnaThemeSize | number
+    CSS.Properties["minWidth"] | DesygnaThemeSize | number
   >;
-  minW?: DesygnaGenericProp<CSSProp["minWidth"] | DesygnaThemeSize | number>;
+  minW?: DesygnaGenericProp<
+    CSS.Properties["minWidth"] | DesygnaThemeSize | number
+  >;
   maxWidth?: DesygnaGenericProp<
-    CSSProp["maxWidth"] | DesygnaThemeSize | number
+    CSS.Properties["maxWidth"] | DesygnaThemeSize | number
   >;
-  maxW?: DesygnaGenericProp<CSSProp["maxWidth"] | DesygnaThemeSize | number>;
+  maxW?: DesygnaGenericProp<
+    CSS.Properties["maxWidth"] | DesygnaThemeSize | number
+  >;
   minHeight?: DesygnaGenericProp<
-    CSSProp["minHeight"] | DesygnaThemeSize | number
+    CSS.Properties["minHeight"] | DesygnaThemeSize | number
   >;
-  minH?: DesygnaGenericProp<CSSProp["minHeight"] | DesygnaThemeSize | number>;
+  minH?: DesygnaGenericProp<
+    CSS.Properties["minHeight"] | DesygnaThemeSize | number
+  >;
   maxHeight?: DesygnaGenericProp<
-    CSSProp["maxHeight"] | DesygnaThemeSize | number
+    CSS.Properties["maxHeight"] | DesygnaThemeSize | number
   >;
-  maxH?: DesygnaGenericProp<CSSProp["maxHeight"] | DesygnaThemeSize | number>;
-  display?: DesygnaGenericProp<CSSProp["display"]>;
-  verticalAlign?: DesygnaGenericProp<CSSProp["verticalAlign"]>;
-  overflow?: DesygnaGenericProp<CSSProp["overflow"]>;
-  overflowX?: DesygnaGenericProp<CSSProp["overflowX"]>;
-  overflowY?: DesygnaGenericProp<CSSProp["overflowY"]>;
-  aspectRatio?: DesygnaGenericProp<CSSProp["aspectRatio"]>;
-  breakAfter?: DesygnaGenericProp<CSSProp["breakAfter"]>;
-  breakBefore?: DesygnaGenericProp<CSSProp["breakBefore"]>;
-  breakInside?: DesygnaGenericProp<CSSProp["breakInside"]>;
-  boxDecorationBreak?: DesygnaGenericProp<CSSProp["boxDecorationBreak"]>;
-  boxSizing?: DesygnaGenericProp<CSSProp["boxSizing"]>;
-  float?: DesygnaGenericProp<CSSProp["float"]>;
-  clear?: DesygnaGenericProp<CSSProp["clear"]>;
-  isolation?: DesygnaGenericProp<CSSProp["isolation"]>;
-  objectFit?: DesygnaGenericProp<CSSProp["objectFit"]>;
-  objectPosition?: DesygnaGenericProp<CSSProp["objectPosition"]>;
-  overscrollBehavior?: DesygnaGenericProp<CSSProp["overscrollBehavior"]>;
-  overscrollBehaviorX?: DesygnaGenericProp<CSSProp["overscrollBehaviorX"]>;
-  overscrollBehaviorY?: DesygnaGenericProp<CSSProp["overscrollBehaviorY"]>;
-  visibility?: DesygnaGenericProp<CSSProp["visibility"]>;
-  transform?: DesygnaGenericProp<CSSProp["transform"]>;
-  transformOrigin?: DesygnaGenericProp<CSSProp["transformOrigin"]>;
-  accentColor?: DesygnaGenericProp<CSSProp["accentColor"]>;
-  appearance?: DesygnaGenericProp<CSSProp["appearance"]>;
-  cursor?: DesygnaGenericProp<CSSProp["cursor"]>;
-  caretColor?: DesygnaGenericProp<CSSProp["caretColor"]>;
-  pointerEvents?: DesygnaGenericProp<CSSProp["pointerEvents"]>;
-  resize?: DesygnaGenericProp<CSSProp["resize"]>;
-  scrollBehavior?: DesygnaGenericProp<CSSProp["scrollBehavior"]>;
-  scrollMargin?: DesygnaGenericProp<CSSProp["scrollMargin"]>;
-  scrollPadding?: DesygnaGenericProp<CSSProp["scrollPadding"]>;
-  scrollSnapAlign?: DesygnaGenericProp<CSSProp["scrollSnapAlign"]>;
-  scrollSnapStop?: DesygnaGenericProp<CSSProp["scrollSnapStop"]>;
-  scrollSnapType?: DesygnaGenericProp<CSSProp["scrollSnapType"]>;
-  touchAction?: DesygnaGenericProp<CSSProp["touchAction"]>;
-  userSelect?: DesygnaGenericProp<CSSProp["userSelect"]>;
-  willChange?: DesygnaGenericProp<CSSProp["willChange"]>;
-  fill?: DesygnaGenericProp<CSSProp["fill"] | DesygnaThemeColor>;
-  stroke?: DesygnaGenericProp<CSSProp["stroke"]>;
-  strokeWidth?: DesygnaGenericProp<CSSProp["strokeWidth"]>;
+  maxH?: DesygnaGenericProp<
+    CSS.Properties["maxHeight"] | DesygnaThemeSize | number
+  >;
+  display?: DesygnaGenericProp<CSS.Properties["display"]>;
+  verticalAlign?: DesygnaGenericProp<CSS.Properties["verticalAlign"]>;
+  overflow?: DesygnaGenericProp<CSS.Properties["overflow"]>;
+  overflowX?: DesygnaGenericProp<CSS.Properties["overflowX"]>;
+  overflowY?: DesygnaGenericProp<CSS.Properties["overflowY"]>;
+  aspectRatio?: DesygnaGenericProp<CSS.Properties["aspectRatio"]>;
+  breakAfter?: DesygnaGenericProp<CSS.Properties["breakAfter"]>;
+  breakBefore?: DesygnaGenericProp<CSS.Properties["breakBefore"]>;
+  breakInside?: DesygnaGenericProp<CSS.Properties["breakInside"]>;
+  boxDecorationBreak?: DesygnaGenericProp<CSS.Properties["boxDecorationBreak"]>;
+  boxSizing?: DesygnaGenericProp<CSS.Properties["boxSizing"]>;
+  float?: DesygnaGenericProp<CSS.Properties["float"]>;
+  clear?: DesygnaGenericProp<CSS.Properties["clear"]>;
+  isolation?: DesygnaGenericProp<CSS.Properties["isolation"]>;
+  objectFit?: DesygnaGenericProp<CSS.Properties["objectFit"]>;
+  objectPosition?: DesygnaGenericProp<CSS.Properties["objectPosition"]>;
+  overscrollBehavior?: DesygnaGenericProp<CSS.Properties["overscrollBehavior"]>;
+  overscrollBehaviorX?: DesygnaGenericProp<
+    CSS.Properties["overscrollBehaviorX"]
+  >;
+  overscrollBehaviorY?: DesygnaGenericProp<
+    CSS.Properties["overscrollBehaviorY"]
+  >;
+  visibility?: DesygnaGenericProp<CSS.Properties["visibility"]>;
+  transform?: DesygnaGenericProp<CSS.Properties["transform"]>;
+  transformOrigin?: DesygnaGenericProp<CSS.Properties["transformOrigin"]>;
+  accentColor?: DesygnaGenericProp<CSS.Properties["accentColor"]>;
+  appearance?: DesygnaGenericProp<CSS.Properties["appearance"]>;
+  cursor?: DesygnaGenericProp<CSS.Properties["cursor"]>;
+  caretColor?: DesygnaGenericProp<CSS.Properties["caretColor"]>;
+  pointerEvents?: DesygnaGenericProp<CSS.Properties["pointerEvents"]>;
+  resize?: DesygnaGenericProp<CSS.Properties["resize"]>;
+  scrollBehavior?: DesygnaGenericProp<CSS.Properties["scrollBehavior"]>;
+  scrollMargin?: DesygnaGenericProp<CSS.Properties["scrollMargin"]>;
+  scrollPadding?: DesygnaGenericProp<CSS.Properties["scrollPadding"]>;
+  scrollSnapAlign?: DesygnaGenericProp<CSS.Properties["scrollSnapAlign"]>;
+  scrollSnapStop?: DesygnaGenericProp<CSS.Properties["scrollSnapStop"]>;
+  scrollSnapType?: DesygnaGenericProp<CSS.Properties["scrollSnapType"]>;
+  touchAction?: DesygnaGenericProp<CSS.Properties["touchAction"]>;
+  userSelect?: DesygnaGenericProp<CSS.Properties["userSelect"]>;
+  willChange?: DesygnaGenericProp<CSS.Properties["willChange"]>;
+  fill?: DesygnaGenericProp<CSS.Properties["fill"] | DesygnaThemeColor>;
+  stroke?: DesygnaGenericProp<CSS.Properties["stroke"]>;
+  strokeWidth?: DesygnaGenericProp<CSS.Properties["strokeWidth"]>;
 };

@@ -1,6 +1,6 @@
-import type { Properties as CSSProp } from "csstype";
+import * as CSS from "csstype";
 import { system } from "styled-system";
-import { DesygnaGenericProp } from "../../types/desygna";
+import { DesygnaGenericProp } from "../types/desygna";
 
 export const $grid = system({
   gridGap: { property: "gridGap" },
@@ -18,16 +18,18 @@ export const $grid = system({
 });
 
 export type DesygnaSystemGridProps = {
-  gridGap?: DesygnaGenericProp<CSSProp["gap"]>;
-  gridRowGap?: DesygnaGenericProp<CSSProp["rowGap"]>;
-  gridColumnGap?: DesygnaGenericProp<CSSProp["columnGap"]>;
-  gridColumn?: DesygnaGenericProp<CSSProp["gridColumn"]>;
-  gridRow?: DesygnaGenericProp<CSSProp["gridRow"]>;
-  gridArea?: DesygnaGenericProp<CSSProp["gridArea"]>;
-  gridAutoFlow?: DesygnaGenericProp<CSSProp["gridAutoFlow"]>;
-  gridAutoRows?: DesygnaGenericProp<CSSProp["gridAutoRows"]>;
-  gridAutoColumns?: DesygnaGenericProp<CSSProp["gridAutoColumns"]>;
-  gridTemplateRows?: DesygnaGenericProp<CSSProp["gridTemplateRows"]>;
-  gridTemplateColumns?: DesygnaGenericProp<CSSProp["gridTemplateColumns"]>;
-  gridTemplateAreas?: DesygnaGenericProp<CSSProp["gridTemplateAreas"]>;
+  gridGap?: DesygnaGenericProp<CSS.Properties["gap"]>;
+  gridRowGap?: DesygnaGenericProp<CSS.Properties["rowGap"]>;
+  gridColumnGap?: DesygnaGenericProp<CSS.Properties["columnGap"]>;
+  gridColumn?: DesygnaGenericProp<CSS.Properties["gridColumn"]>;
+  gridRow?: DesygnaGenericProp<CSS.Properties["gridRow"]>;
+  gridArea?: DesygnaGenericProp<CSS.Properties["gridArea"]>;
+  gridAutoFlow?: DesygnaGenericProp<CSS.Properties["gridAutoFlow"]>;
+  gridAutoRows?: DesygnaGenericProp<CSS.Properties["gridAutoRows"]>;
+  gridAutoColumns?: DesygnaGenericProp<CSS.Properties["gridAutoColumns"]>;
+  gridTemplateRows?: DesygnaGenericProp<CSS.Properties["gridTemplateRows"]>;
+  gridTemplateColumns?: DesygnaGenericProp<
+    CSS.Properties["gridTemplateColumns"]
+  >;
+  gridTemplateAreas?: DesygnaGenericProp<CSS.Properties["gridTemplateAreas"]>;
 };

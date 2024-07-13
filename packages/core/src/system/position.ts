@@ -1,6 +1,6 @@
-import type { Properties as CSSProp } from "csstype";
+import * as CSS from "csstype";
 import { system } from "styled-system";
-import { DesygnaGenericProp, DesygnaThemeSpace } from "../../types/desygna";
+import { DesygnaGenericProp, DesygnaThemeSpace } from "../types/desygna";
 
 export const $position = system({
   gridGap: { property: "gridGap" },
@@ -12,10 +12,18 @@ export const $position = system({
 });
 
 export type DesygnaSystemPositionProps = {
-  position?: DesygnaGenericProp<CSSProp["position"]>;
-  zIndex?: DesygnaGenericProp<CSSProp["zIndex"] | DesygnaThemeSpace | number>;
-  top?: DesygnaGenericProp<CSSProp["top"] | DesygnaThemeSpace | number>;
-  right?: DesygnaGenericProp<CSSProp["right"] | DesygnaThemeSpace | number>;
-  bottom?: DesygnaGenericProp<CSSProp["bottom"] | DesygnaThemeSpace | number>;
-  left?: DesygnaGenericProp<CSSProp["left"] | DesygnaThemeSpace | number>;
+  position?: DesygnaGenericProp<CSS.Properties["position"]>;
+  zIndex?: DesygnaGenericProp<
+    CSS.Properties["zIndex"] | DesygnaThemeSpace | number
+  >;
+  top?: DesygnaGenericProp<CSS.Properties["top"] | DesygnaThemeSpace | number>;
+  right?: DesygnaGenericProp<
+    CSS.Properties["right"] | DesygnaThemeSpace | number
+  >;
+  bottom?: DesygnaGenericProp<
+    CSS.Properties["bottom"] | DesygnaThemeSpace | number
+  >;
+  left?: DesygnaGenericProp<
+    CSS.Properties["left"] | DesygnaThemeSpace | number
+  >;
 };

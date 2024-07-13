@@ -1,6 +1,6 @@
-import type { Properties as CSSProp } from "csstype";
+import * as CSS from "csstype";
 import { system } from "styled-system";
-import { DesygnaGenericProp, DesygnaThemeColor } from "../../types/desygna";
+import { DesygnaGenericProp, DesygnaThemeColor } from "../types/desygna";
 
 export const $background = system({
   background: {
@@ -17,12 +17,16 @@ export const $background = system({
 });
 
 export declare type DesygnaSystemBackgroundProps = {
-  background?: DesygnaGenericProp<CSSProp["background"] | DesygnaThemeColor>;
-  backgroundImage?: DesygnaGenericProp<CSSProp["backgroundImage"]>;
-  backgroundSize?: DesygnaGenericProp<CSSProp["backgroundSize"]>;
-  backgroundPosition?: DesygnaGenericProp<CSSProp["backgroundPosition"]>;
-  backgroundRepeat?: DesygnaGenericProp<CSSProp["backgroundRepeat"]>;
-  backgroundAttachment?: DesygnaGenericProp<CSSProp["backgroundAttachment"]>;
-  backgroundClip?: DesygnaGenericProp<CSSProp["backgroundClip"]>;
-  backgroundOrigin?: DesygnaGenericProp<CSSProp["backgroundOrigin"]>;
+  background?: DesygnaGenericProp<
+    CSS.Properties["background"] | DesygnaThemeColor
+  >;
+  backgroundImage?: DesygnaGenericProp<CSS.Properties["backgroundImage"]>;
+  backgroundSize?: DesygnaGenericProp<CSS.Properties["backgroundSize"]>;
+  backgroundPosition?: DesygnaGenericProp<CSS.Properties["backgroundPosition"]>;
+  backgroundRepeat?: DesygnaGenericProp<CSS.Properties["backgroundRepeat"]>;
+  backgroundAttachment?: DesygnaGenericProp<
+    CSS.Properties["backgroundAttachment"]
+  >;
+  backgroundClip?: DesygnaGenericProp<CSS.Properties["backgroundClip"]>;
+  backgroundOrigin?: DesygnaGenericProp<CSS.Properties["backgroundOrigin"]>;
 };
