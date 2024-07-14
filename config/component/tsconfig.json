@@ -11,7 +11,8 @@
     "sourceMap": true,
     "target": "es6",
     "typeRoots": ["node_modules/@types", "types"],
-    "noEmit": true
+    "noEmit": true,
+    "skipLibCheck": true
   },
   "exclude": ["dist", "build", "node_modules"]
 }
