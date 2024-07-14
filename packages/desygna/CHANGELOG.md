@@ -1,5 +1,33 @@
 # @desygna/desygna
 
+## 4.0.0
+
+### Major Changes
+
+- [`48b4d35`](https://github.com/desygna/desygna/commit/48b4d35ad106b35c73291e6181c7a04f6a567671) Thanks [@kerimcet](https://github.com/kerimcet)! - V4 Update
+
+### Patch Changes
+
+- [#36](https://github.com/desygna/desygna/pull/36) [`71740bf`](https://github.com/desygna/desygna/commit/71740bfbd8faabf83c5cfa17808b9c4864d5c781) Thanks [@kerimcet](https://github.com/kerimcet)! - Update theme types
+
+- [#36](https://github.com/desygna/desygna/pull/36) [`71740bf`](https://github.com/desygna/desygna/commit/71740bfbd8faabf83c5cfa17808b9c4864d5c781) Thanks [@kerimcet](https://github.com/kerimcet)! - Update `types` field in `package.json` to point to `dist/src/index.d.ts`
+
+  Update `typeRoots` field in `tsconfig.json`
+
+  The $shouldForwardProp property has renamed to shouldForwardProp for ease of use.
+
+- [#36](https://github.com/desygna/desygna/pull/36) [`71740bf`](https://github.com/desygna/desygna/commit/71740bfbd8faabf83c5cfa17808b9c4864d5c781) Thanks [@kerimcet](https://github.com/kerimcet)! - Update core
+
+- Updated dependencies [[`71740bf`](https://github.com/desygna/desygna/commit/71740bfbd8faabf83c5cfa17808b9c4864d5c781), [`48b4d35`](https://github.com/desygna/desygna/commit/48b4d35ad106b35c73291e6181c7a04f6a567671), [`71740bf`](https://github.com/desygna/desygna/commit/71740bfbd8faabf83c5cfa17808b9c4864d5c781), [`71740bf`](https://github.com/desygna/desygna/commit/71740bfbd8faabf83c5cfa17808b9c4864d5c781), [`71740bf`](https://github.com/desygna/desygna/commit/71740bfbd8faabf83c5cfa17808b9c4864d5c781), [`71740bf`](https://github.com/desygna/desygna/commit/71740bfbd8faabf83c5cfa17808b9c4864d5c781), [`71740bf`](https://github.com/desygna/desygna/commit/71740bfbd8faabf83c5cfa17808b9c4864d5c781)]:
+  - @desygna/desygna-absolute@4.0.0
+  - @desygna/desygna-box@4.0.0
+  - @desygna/desygna-button@4.0.0
+  - @desygna/desygna-flex@4.0.0
+  - @desygna/desygna-grid@4.0.0
+  - @desygna/desygna-paragraph@4.0.0
+  - @desygna/desygna-span@4.0.0
+  - @desygna/desygna-core@4.0.0
+
 ## 4.0.0-pre.3
 
 ### Patch Changes
