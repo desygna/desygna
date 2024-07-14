@@ -13,6 +13,7 @@
     "@desygna/desygna": "4.0.0-dev.0"
   },
   "changesets": [
+    "chilly-eagles-hunt",
     "grumpy-frogs-impress",
     "pink-rabbits-enjoy",
     "sour-pandas-tell",

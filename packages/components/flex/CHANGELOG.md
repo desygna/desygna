@@ -1,5 +1,14 @@
 # @desygna/desygna-flex
 
+## 4.0.0-pre.3
+
+### Patch Changes
+
+- [#31](https://github.com/desygna/desygna/pull/31) [`ad97dc8`](https://github.com/desygna/desygna/commit/ad97dc830a961f5d33f6a045bf833df89d9f68dd) Thanks [@github-actions](https://github.com/apps/github-actions)! - Update theme types
+
+- Updated dependencies [[`ad97dc8`](https://github.com/desygna/desygna/commit/ad97dc830a961f5d33f6a045bf833df89d9f68dd)]:
+  - @desygna/desygna-core@4.0.0-pre.3
+
 ## 4.0.0-pre.2
 
 ### Patch Changes
