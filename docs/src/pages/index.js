@@ -12,24 +12,22 @@ function HomepageHeader() {
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
-        <img
-          src="img/desygna_icon.png"
-          width="80"
-          height="80"
-          style={{ borderRadius: "80px" }}
-        />
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/v4">
+          <Link className="button button--secondary button--lg" to="/docs">
             Getting Started
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/v4-rc"
+          >
+            Checkout v4-rc.1 🛠️
           </Link>
         </div>
         <p>
-          Desygna is a simple, powerful, and extensible styling library which is
-          built on top of Emotion 👩‍🎤 and Styled System ✨ <br /> It provides
-          typesafe css-in-js helpers that makes easier to create variant based
-          components.
+          Stay tuned for the Desygna v4, <br /> we are coming with type
+          improvements!
         </p>
       </div>
     </header>
@@ -40,6 +38,12 @@ export default function Home() {
   return (
     <Layout description="Description will go into a meta tag in <head />">
       <HomepageHeader />
+      <div className="desygna-docs-flex-center desygna-docs-container-md desygna-docs-mx-auto desygna-docs-my-md">
+        <Admonition type="caution" icon="🚧" title="Caution">
+          This project is under active development and some of the APIs may
+          change.
+        </Admonition>
+      </div>
     </Layout>
   );
 }

@@ -5,7 +5,7 @@
     "module": "esnext",
     "noImplicitAny": true,
     "outDir": "./dist",
-    "target": "es6",
+    "target": "es5",
     "moduleResolution": "node",
     "lib": ["dom", "dom.iterable", "esnext"],
     "sourceMap": true,
@@ -13,10 +13,10 @@
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
-    "typeRoots": ["types", "../node_modules/@types"],
+    "typeRoots": ["../node_modules/@types", "types"],
     "noEmit": true
   },
 
-  "include": ["src/**/*", "types"],
+  "include": ["src/**/*", "types/**/*"],
   "exclude": [".storybook", "dist", "build", "node_modules"]
 }

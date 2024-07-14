@@ -1,13 +1,13 @@
 import { HTMLAttributes } from "react";
 import {
-  $styled,
-  $composeAll,
-  DesygnaComposedProps,
+  styled,
+  composeAll,
+  ComposedProps,
   AsProp
 } from "@desygna/desygna-core";
 
-export type DesygnaBoxComponentProps = HTMLAttributes<HTMLDivElement> &
-  DesygnaComposedProps &
+export type BoxComponentProps = HTMLAttributes<HTMLDivElement> &
+  ComposedProps &
   AsProp;
 
-export const Box = $styled.div<DesygnaBoxComponentProps>($composeAll());
+export const Box = styled.div<BoxComponentProps>(composeAll);

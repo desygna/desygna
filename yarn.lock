@@ -1665,80 +1665,77 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@desygna/desygna-absolute@4.0.0-pre.2, @desygna/desygna-absolute@workspace:packages/components/absolute":
+"@desygna/desygna-absolute@3.0.0, @desygna/desygna-absolute@workspace:packages/components/absolute":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-absolute@workspace:packages/components/absolute"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-pre.2
+    "@desygna/desygna-core": 3.0.0
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-box@4.0.0-pre.2, @desygna/desygna-box@workspace:packages/components/box":
+"@desygna/desygna-box@3.0.0, @desygna/desygna-box@workspace:packages/components/box":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-box@workspace:packages/components/box"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-pre.2
+    "@desygna/desygna-core": 3.0.0
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-button@4.0.0-pre.2, @desygna/desygna-button@workspace:packages/components/button":
+"@desygna/desygna-button@3.0.0, @desygna/desygna-button@workspace:packages/components/button":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-button@workspace:packages/components/button"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-pre.2
+    "@desygna/desygna-core": 3.0.0
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-core@4.0.0-pre.2, @desygna/desygna-core@workspace:packages/core":
+"@desygna/desygna-core@3.0.0, @desygna/desygna-core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-core@workspace:packages/core"
   dependencies:
     "@emotion/react": ^11.10.0
     "@emotion/styled": ^11.10.0
     "@styled-system/css": ^5.1.5
-    "@styled-system/should-forward-prop": ^5.1.5
     "@types/styled-system": ^5.1.15
     "@types/styled-system__css": ^5.0.17
-    "@types/styled-system__should-forward-prop": ^5.1.4
   peerDependencies:
     "@emotion/react": ^11.10.0
     "@emotion/styled": ^11.10.0
-    "@styled-system/should-forward-prop": ^5.1.5
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
     styled-system: ^5.1.5
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-flex@4.0.0-pre.2, @desygna/desygna-flex@workspace:packages/components/flex":
+"@desygna/desygna-flex@3.0.0, @desygna/desygna-flex@workspace:packages/components/flex":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-flex@workspace:packages/components/flex"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-pre.2
+    "@desygna/desygna-core": 3.0.0
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-grid@4.0.0-pre.2, @desygna/desygna-grid@workspace:packages/components/grid":
+"@desygna/desygna-grid@3.0.0, @desygna/desygna-grid@workspace:packages/components/grid":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-grid@workspace:packages/components/grid"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-pre.2
+    "@desygna/desygna-core": 3.0.0
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-paragraph@4.0.0-pre.2, @desygna/desygna-paragraph@workspace:packages/components/paragraph":
+"@desygna/desygna-paragraph@3.0.0, @desygna/desygna-paragraph@workspace:packages/components/paragraph":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-paragraph@workspace:packages/components/paragraph"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-pre.2
+    "@desygna/desygna-core": 3.0.0
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-span@4.0.0-pre.2, @desygna/desygna-span@workspace:packages/components/span":
+"@desygna/desygna-span@3.0.0, @desygna/desygna-span@workspace:packages/components/span":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-span@workspace:packages/components/span"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-pre.2
+    "@desygna/desygna-core": 3.0.0
   languageName: unknown
   linkType: soft
 
@@ -1746,14 +1743,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@desygna/desygna@workspace:packages/desygna"
   dependencies:
-    "@desygna/desygna-absolute": 4.0.0-pre.2
-    "@desygna/desygna-box": 4.0.0-pre.2
-    "@desygna/desygna-button": 4.0.0-pre.2
-    "@desygna/desygna-core": 4.0.0-pre.2
-    "@desygna/desygna-flex": 4.0.0-pre.2
-    "@desygna/desygna-grid": 4.0.0-pre.2
-    "@desygna/desygna-paragraph": 4.0.0-pre.2
-    "@desygna/desygna-span": 4.0.0-pre.2
+    "@desygna/desygna-absolute": 3.0.0
+    "@desygna/desygna-box": 3.0.0
+    "@desygna/desygna-button": 3.0.0
+    "@desygna/desygna-core": 3.0.0
+    "@desygna/desygna-flex": 3.0.0
+    "@desygna/desygna-grid": 3.0.0
+    "@desygna/desygna-paragraph": 3.0.0
+    "@desygna/desygna-span": 3.0.0
     "@emotion/react": ^11.10.0
     "@emotion/styled": ^11.10.0
     "@styled-system/css": ^5.1.5
@@ -1810,35 +1807,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/is-prop-valid@npm:^0.8.1":
-  version: 0.8.8
-  resolution: "@emotion/is-prop-valid@npm:0.8.8"
-  dependencies:
-    "@emotion/memoize": 0.7.4
-  checksum: bb7ec6d48c572c540e24e47cc94fc2f8dec2d6a342ae97bc9c8b6388d9b8d283862672172a1bb62d335c02662afe6291e10c71e9b8642664a8b43416cdceffac
-  languageName: node
-  linkType: hard
-
 "@emotion/is-prop-valid@npm:^1.2.0":
   version: 1.2.0
   resolution: "@emotion/is-prop-valid@npm:1.2.0"
   dependencies:
     "@emotion/memoize": ^0.8.0
   checksum: cc7a19850a4c5b24f1514665289442c8c641709e6f7711067ad550e05df331da0692a16148e85eda6f47e31b3261b64d74c5e25194d053223be16231f969d633
-  languageName: node
-  linkType: hard
-
-"@emotion/memoize@npm:0.7.4":
-  version: 0.7.4
-  resolution: "@emotion/memoize@npm:0.7.4"
-  checksum: 4e3920d4ec95995657a37beb43d3f4b7d89fed6caa2b173a4c04d10482d089d5c3ea50bbc96618d918b020f26ed6e9c4026bbd45433566576c1f7b056c3271dc
-  languageName: node
-  linkType: hard
-
-"@emotion/memoize@npm:^0.7.1":
-  version: 0.7.5
-  resolution: "@emotion/memoize@npm:0.7.5"
-  checksum: 83da8d4a7649a92c72f960817692bc6be13cc13e107b9f7e878d63766525ed4402881bfeb3cda61145c050281e7e260f114a0a2870515527346f2ef896b915b3
   languageName: node
   linkType: hard
 
@@ -3311,17 +3285,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@styled-system/should-forward-prop@npm:^5.1.5":
-  version: 5.1.5
-  resolution: "@styled-system/should-forward-prop@npm:5.1.5"
-  dependencies:
-    "@emotion/is-prop-valid": ^0.8.1
-    "@emotion/memoize": ^0.7.1
-    styled-system: ^5.1.5
-  checksum: 49e383f114a72768a7c69d2986812b88f882cee81c96f7b58a1618162001168fce38f607acc6fd2af91fabe8e475a436f3f36c938dba249eadef631dcd3d26ad
-  languageName: node
-  linkType: hard
-
 "@styled-system/space@npm:^5.1.2":
   version: 5.1.2
   resolution: "@styled-system/space@npm:5.1.2"
@@ -3511,13 +3474,6 @@ __metadata:
   dependencies:
     csstype: ^3.0.2
   checksum: 3e2bf0d57e33df4a22076d5f1445f0337757606b2d09a9597d1438e74877985d32b3ea02036ebbf47ca2beedffaf3146ff74592282c13d23d39fe7c09375d410
-  languageName: node
-  linkType: hard
-
-"@types/styled-system__should-forward-prop@npm:^5.1.4":
-  version: 5.1.4
-  resolution: "@types/styled-system__should-forward-prop@npm:5.1.4"
-  checksum: f8dafb4afc76b80092275568c7587d5f1ad1de6958efdf862ae8de621db91a94f1d26a8bd517c281aae660c6eff3f56637f0b9866105a46c708689fe232661c3
   languageName: node
   linkType: hard
 

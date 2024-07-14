@@ -1,20 +1,19 @@
 ---
 slug: /system/shadow
-title: $shadow
+title: Shadow
 ---
 
-### Props with scale option
+```js
+import { shadow } from "@desygna/desygna";
+```
 
-| Prop         | Scale           |
-| :----------- | :-------------- |
-| `textShadow` | `theme.shadows` |
-| `boxShadow`  | `theme.shadows` |
+A system that enables `shadow` props.
 
-### Types
+| Prop         | CSS Property |
+| ------------ | ------------ |
+| `textShadow` | textShadow   |
+| `boxShadow`  | boxShadow    |
 
-```ts
-export type DesygnaSystemShadowProps = {
-  textShadow?: DesygnaGenericProp<CSS.Properties["textShadow"] | DesygnaThemeShadow>;
-  boxShadow?: DesygnaGenericProp<CSS.Properties["boxShadow"] | DesygnaThemeShadow>;
-};
+```jsx
+<Box textShadow="0 0 2px 3px #000" boxShadow="0 0 5px 10px red" />
 ```

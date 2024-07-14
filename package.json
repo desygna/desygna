@@ -9,7 +9,7 @@
     "docs:start": "cd docs && yarn && yarn start",
     "p:build": "cd $INIT_CWD && tsc && yarn p:rollup",
     "p:build:watch": "cd $INIT_CWD && yarn p:rollup --watch",
-    "p:brl": "cd $INIT_CWD && barrelsby -d src -D -l all -q -e '.*(template|spec|__tests__|stories|private).*|.*\\.d\\.ts'",
+    "p:brl": "cd $INIT_CWD && barrelsby -d src -D -l all -q -e '.*(template|spec|__tests__|stories|private).*'",
     "p:rollup": "cd $INIT_CWD && rollup -c",
     "nuke": "yarn nuke:node_modules && yarn nuke:outputs",
     "nuke:node_modules": "rm -rf ./**/node_modules",
