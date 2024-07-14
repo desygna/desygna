@@ -1,31 +1,66 @@
 ---
 slug: /system/grid
-title: $grid
+title: Grid
 ---
 
-### Props with scale option
+```js
+import { grid } from "@desygna/desygna";
+```
 
-| Prop            | Scale            |
-| :-------------- | :--------------- |
-| `gridGap`       | `theme.spacings` |
-| `gridRowGap`    | `theme.spacings` |
-| `gridColumnGap` | `theme.spacings` |
+A system that enables `grid` props.
 
-### Types
+| Prop                  | CSS Property        |
+| --------------------- | ------------------- |
+| `gridGap`             | gridGap             |
+| `gridColumnGap`       | gridColumnGap       |
+| `gridRowGap`          | gridRowGap          |
+| `gridColumn`          | gridColumn          |
+| `gridRow`             | gridRow             |
+| `gridAutoFlow`        | gridAutoFlow        |
+| `gridAutoColumns`     | gridAutoColumns     |
+| `gridAutoRows`        | gridAutoRows        |
+| `gridTemplateColumns` | gridTemplateColumns |
+| `gridTemplateRows`    | gridTemplateRows    |
+| `gridTemplateAreas`   | gridTemplateAreas   |
+| `gridArea`            | gridArea            |
 
-```ts
-export type DesygnaSystemGridProps = {
-  gridGap?: DesygnaGenericProp<CSS.Properties["gap"] | DesygnaThemeSpace | number>;
-  gridRowGap?: DesygnaGenericProp<CSS.Properties["rowGap"] | DesygnaThemeSpace | number>;
-  gridColumnGap?: DesygnaGenericProp<CSS.Properties["columnGap"] | DesygnaThemeSpace | number>;
-  gridColumn?: DesygnaGenericProp<CSS.Properties["gridColumn"]>;
-  gridRow?: DesygnaGenericProp<CSS.Properties["gridRow"]>;
-  gridArea?: DesygnaGenericProp<CSS.Properties["gridArea"]>;
-  gridAutoFlow?: DesygnaGenericProp<CSS.Properties["gridAutoFlow"]>;
-  gridAutoRows?: DesygnaGenericProp<CSS.Properties["gridAutoRows"]>;
-  gridAutoColumns?: DesygnaGenericProp<CSS.Properties["gridAutoColumns"]>;
-  gridTemplateRows?: DesygnaGenericProp<CSS.Properties["gridTemplateRows"]>;
-  gridTemplateColumns?: DesygnaGenericProp<CSS.Properties["gridTemplateColumns"]>;
-  gridTemplateAreas?: DesygnaGenericProp<CSS.Properties["gridTemplateAreas"]>;
-};
+```jsx
+// gridGap
+<Box gridGap={10} />
+<Box gridGap={[ 1, 2 ]} />
+
+// gridColumnGap
+<Box gridColumnGap={10} />
+<Box gridColumnGap={[ 1, 2 ]} />
+
+// gridRowGap
+<Box gridRowGap={10} />
+<Box gridRowGap={[ 1, 2 ]} />
+
+// gridColumn
+<Box gridColumn={1} />
+
+// gridRow
+<Box gridRow={1} />
+
+// gridAutoFlow
+<Box gridAutoFlow='row' />
+
+// gridAutoColumns
+<Box gridAutoColumns='auto' />
+
+// gridAutoRows
+<Box gridAutoRows='auto' />
+
+// gridTemplateColumns
+<Box gridTemplateColumns='1fr 2fr' />
+
+// gridTemplateRows
+<Box gridTemplateRows='auto' />
+
+// gridTemplateAreas
+<Box gridTemplateAreas='a b' />
+
+// gridArea
+<Box gridArea='a' />
 ```

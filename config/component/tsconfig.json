@@ -9,10 +9,9 @@
     "module": "esnext",
     "moduleResolution": "node",
     "sourceMap": true,
-    "target": "es6",
+    "target": "es5",
     "typeRoots": ["node_modules/@types", "types"],
-    "noEmit": true,
-    "skipLibCheck": true
+    "noEmit": true
   },
   "exclude": ["dist", "build", "node_modules"]
 }

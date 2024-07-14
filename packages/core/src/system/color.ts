@@ -1,9 +1,24 @@
 import * as CSS from "csstype";
-import { DesygnaGenericProp, DesygnaThemeColor } from "../types/desygna";
+import { system } from "styled-system";
+import { ResponsiveProp } from "../types/ResponsiveProp";
 
-export type DesygnaSystemColorProps = {
-  c?: DesygnaGenericProp<CSS.Properties["color"], DesygnaThemeColor>;
-  color?: DesygnaGenericProp<CSS.Properties["color"], DesygnaThemeColor>;
-  backgroundColor?: DesygnaGenericProp<CSS.Properties["backgroundColor"], DesygnaThemeColor>;
-  bg?: DesygnaGenericProp<CSS.Properties["backgroundColor"], DesygnaThemeColor>;
+export type ColorProps = {
+  color?: ResponsiveProp<CSS.Properties["color"]>;
+  backgroundColor?: ResponsiveProp<CSS.Properties["backgroundColor"]>;
+  bg?: ResponsiveProp<CSS.Properties["backgroundColor"]>;
 };
+
+export const color = system({
+  color: {
+    scale: "colors",
+    property: "color"
+  },
+  backgroundColor: {
+    scale: "colors",
+    property: "backgroundColor"
+  },
+  bg: {
+    scale: "colors",
+    property: "backgroundColor"
+  }
+});

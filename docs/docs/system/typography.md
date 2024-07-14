@@ -1,42 +1,51 @@
 ---
 slug: /system/typography
-title: $typography
+title: Typography
 ---
 
-### Props with scale option
+```js
+import { typography } from "@desygna/desygna";
+```
 
-| Prop            | Scale                  |
-| :-------------- | :--------------------- |
-| `fontFamily`    | `theme.fonts`          |
-| `fontSize`      | `theme.fontSizes`      |
-| `fontWeight`    | `theme.fontWeights`    |
-| `lineHeight`    | `theme.lineHeights`    |
-| `letterSpacing` | `theme.letterSpacings` |
+A system that enables `typography` props.
 
-### Types
+| Prop            | CSS Property  |
+| --------------- | ------------- |
+| `fontFamily`    | fontFamily    |
+| `fontSize`      | fontSize      |
+| `fontWeight`    | fontWeight    |
+| `lineHeight`    | lineHeight    |
+| `letterSpacing` | letterSpacing |
+| `textAlign`     | textAlign     |
+| `fontStyle`     | fontStyle     |
 
-```ts
-export type DesygnaSystemTypographyProps = {
-  fontFamily?: DesygnaGenericProp<CSS.Properties["fontFamily"] | DesygnaThemeFont>;
-  fontSize?: DesygnaGenericProp<CSS.Properties["fontSize"] | DesygnaThemeFontSize | number>;
-  fontWeight?: DesygnaGenericProp<CSS.Properties["fontWeight"] | DesygnaThemeFontWeight>;
-  lineHeight?: DesygnaGenericProp<CSS.Properties["lineHeight"] | DesygnaThemeLineHeight | number>;
-  letterSpacing?: DesygnaGenericProp<CSS.Properties["letterSpacing"] | DesygnaThemeLetterSpacing>;
-  textAlign?: DesygnaGenericProp<CSS.Properties["textAlign"]>;
-  fontStyle?: DesygnaGenericProp<CSS.Properties["fontStyle"]>;
-  fontVariantNumeric?: DesygnaGenericProp<CSS.Properties["fontVariantNumeric"]>;
-  listStyleType?: DesygnaGenericProp<CSS.Properties["listStyle"]>;
-  listStylePosition?: DesygnaGenericProp<CSS.Properties["listStylePosition"]>;
-  textDecoration?: DesygnaGenericProp<CSS.Properties["textDecoration"]>;
-  textDecorationColor?: DesygnaGenericProp<CSS.Properties["textDecorationColor"]>;
-  textDecorationStyle?: DesygnaGenericProp<CSS.Properties["textDecorationStyle"]>;
-  textDecorationThickness?: DesygnaGenericProp<CSS.Properties["textDecorationThickness"]>;
-  textUnderlineOffset?: DesygnaGenericProp<CSS.Properties["textUnderlineOffset"]>;
-  textTransform?: DesygnaGenericProp<CSS.Properties["textTransform"]>;
-  textOverflow?: DesygnaGenericProp<CSS.Properties["textOverflow"]>;
-  textIndent?: DesygnaGenericProp<CSS.Properties["textIndent"]>;
-  verticalAlign?: DesygnaGenericProp<CSS.Properties["verticalAlign"]>;
-  whiteSpace?: DesygnaGenericProp<CSS.Properties["whiteSpace"]>;
-  wordBreak?: DesygnaGenericProp<CSS.Properties["wordBreak"]>;
-};
+```jsx
+// examples
+// font-size of `theme.fontSizes[3]`
+<Text fontSize={3} />
+
+// font-size `32px`
+<Text fontSize={32} />
+
+// font-size `'2em'`
+<Text fontSize='2em' />
+
+// font-size `10px` on all viewports and `12px` from the first breakpoint and up
+<Text fontSize={[ 10, 12 ]} />
+
+// fontFamily
+<Text fontFamily='mono' />
+
+// textAlign
+<Text textAlign='center' />
+<Text textAlign={[ 'center', 'left' ]} />
+
+// lineHeight
+<Text lineHeight='1.25' />
+
+// fontWeight
+<Text fontWeight='bold' />
+
+// letterSpacing
+<Text letterSpacing='0.1em' />
 ```

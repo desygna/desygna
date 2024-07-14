@@ -7,12 +7,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Desygna",
-  tagline: "Makes styling components easier",
+  tagline: "🎨 Makes styling components easy",
   url: "https://desygna.vercel.app",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/desygna_icon.png",
+  favicon: "img/favicon.ico",
   organizationName: "desygna",
   projectName: "desygna",
   i18n: {
@@ -29,20 +29,7 @@ const config = {
           editUrl: "https://github.com/desygna/desygna/tree/main/docs",
           remarkPlugins: [
             [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }]
-          ],
-          lastVersion: "current",
-          versions: {
-            current: {
-              label: "4.x.x (latest)",
-              path: "v4"
-            },
-            "3.0.0": {
-              label: "3.x.x",
-              path: "v3",
-              banner: "unmaintained",
-              noIndex: true
-            }
-          }
+          ]
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css")
@@ -58,14 +45,13 @@ const config = {
         title: "Desygna",
         logo: {
           alt: "Desygna",
-          src: "img/desygna_icon.png",
-          style: {
-            borderRadius: "99px"
-          }
+          src: "img/logo.svg"
         },
         items: [
           {
-            type: "docsVersionDropdown"
+            position: "left",
+            label: "Docs",
+            to: "docs"
           },
           {
             href: "https://github.com/desygna/desygna",
@@ -75,22 +61,19 @@ const config = {
         ]
       },
       footer: {
+        style: "dark",
         links: [
           {
             title: "Docs",
             items: [
               {
                 label: "Installation",
-                to: "/docs/v4/installation"
-              },
-              {
-                label: "Examples",
-                to: "https://github.com/desygna/desygna-examples"
+                to: "/docs/installation"
               }
             ]
           },
           {
-            title: "Links",
+            title: "More",
             items: [
               {
                 label: "GitHub",
@@ -98,9 +81,8 @@ const config = {
               }
             ]
           }
-        ]
-
-        // copyright: `Copyright © ${new Date().getFullYear()} Desygna - Makes styling components easier.`
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} Desygna - Built with Docusaurus.`
       },
       prism: {
         theme: lightCodeTheme,

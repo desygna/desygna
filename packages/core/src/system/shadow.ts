@@ -1,7 +1,9 @@
 import * as CSS from "csstype";
-import { DesygnaGenericProp, DesygnaThemeShadow } from "../types/desygna";
+import { ResponsiveProp } from "../types/ResponsiveProp";
 
-export type DesygnaSystemShadowProps = {
-  textShadow?: DesygnaGenericProp<CSS.Properties["textShadow"] | DesygnaThemeShadow>;
-  boxShadow?: DesygnaGenericProp<CSS.Properties["boxShadow"] | DesygnaThemeShadow>;
+export { shadow } from "styled-system";
+
+export type ShadowProps = {
+  textShadow?: ResponsiveProp<CSS.Properties["textShadow"]>;
+  boxShadow?: ResponsiveProp<CSS.Properties["boxShadow"]>;
 };

@@ -8,7 +8,6 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  min-height: 80vh;
 }
 
 @media screen and (max-width: 996px) {
@@ -22,5 +21,5 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
-  margin-bottom: 96px;
+  margin-bottom: 24px;
 }

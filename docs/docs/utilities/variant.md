@@ -1,17 +1,19 @@
 ---
 slug: /utilities/variant
-title: $variant
+title: Variant
 ---
 
-The `$styled` API can also take `$variant` which is a function that takes a
+The `styled` API can also take `variant` which is a function that takes a
 variants related to the component.
 
 ```ts
-import { $styled, $variant } from "@desygna/desygna";
+import { styled, variant } from "@desygna/desygna";
 
-const Container = $styled.div(
-  $variant({
-    prop: "type", // This is prop. name
+const Container = styled.div(
+  variant({
+    // -> you can pass any prop name here
+    prop: "type",
+    // variants
     variants: {
       primary: {
         background: "red",
