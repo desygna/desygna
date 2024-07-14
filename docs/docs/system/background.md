@@ -1,27 +1,25 @@
 ---
 slug: /system/background
-title: Background
+title: $background
 ---
 
-```js
-import { background } from "@desygna/desygna";
-```
+### Props with scale option
 
-A system that enables `background` props.
+| Prop         | Scale          |
+| :----------- | :------------- |
+| `background` | `theme.colors` |
 
-| Prop                 | CSS Property       |
-| -------------------- | ------------------ |
-| `backgroundImage`    | backgroundImage    |
-| `backgroundSize`     | backgroundSize     |
-| `backgroundPosition` | backgroundPosition |
-| `backgroundRepeat`   | backgroundRepeat   |
+### Types
 
-```jsx
-// example
-<Box
-  backgroundImage="url('kitten.png')"
-  backgroundSize="cover"
-  backgroundPosition="center"
-  backgroundRepeat="repeat-x"
-/>
+```ts
+export type DesygnaSystemBackgroundProps = {
+  background?: DesygnaGenericProp<CSS.Properties["background"] | DesygnaThemeColor>;
+  backgroundImage?: DesygnaGenericProp<CSS.Properties["backgroundImage"]>;
+  backgroundSize?: DesygnaGenericProp<CSS.Properties["backgroundSize"]>;
+  backgroundPosition?: DesygnaGenericProp<CSS.Properties["backgroundPosition"]>;
+  backgroundRepeat?: DesygnaGenericProp<CSS.Properties["backgroundRepeat"]>;
+  backgroundAttachment?: DesygnaGenericProp<CSS.Properties["backgroundAttachment"]>;
+  backgroundClip?: DesygnaGenericProp<CSS.Properties["backgroundClip"]>;
+  backgroundOrigin?: DesygnaGenericProp<CSS.Properties["backgroundOrigin"]>;
+};
 ```

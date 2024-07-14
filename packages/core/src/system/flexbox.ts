@@ -1,20 +1,18 @@
 import * as CSS from "csstype";
-import { ResponsiveProp } from "../types/ResponsiveProp";
+import { DesygnaGenericProp } from "../types/desygna";
 
-export { flexbox } from "styled-system";
-
-export type FlexboxProps = {
-  alignItems?: ResponsiveProp<CSS.Properties["alignItems"]>;
-  alignContent?: ResponsiveProp<CSS.Properties["alignContent"]>;
-  justifyItems?: ResponsiveProp<CSS.Properties["justifyItems"]>;
-  justifyContent?: ResponsiveProp<CSS.Properties["justifyContent"]>;
-  flexWrap?: ResponsiveProp<CSS.Properties["flexWrap"]>;
-  flexDirection?: ResponsiveProp<CSS.Properties["flexDirection"]>;
-  flex?: ResponsiveProp<CSS.Properties["flex"]>;
-  flexGrow?: ResponsiveProp<CSS.Properties["flexGrow"]>;
-  flexShrink?: ResponsiveProp<CSS.Properties["flexShrink"]>;
-  flexBasis?: ResponsiveProp<CSS.Properties["flexBasis"]>;
-  justifySelf?: ResponsiveProp<CSS.Properties["justifySelf"]>;
-  alignSelf?: ResponsiveProp<CSS.Properties["alignSelf"]>;
-  order?: ResponsiveProp<CSS.Properties["order"]>;
+export type DesygnaSystemFlexboxProps = {
+  alignItems?: DesygnaGenericProp<CSS.Properties["alignItems"]>;
+  alignContent?: DesygnaGenericProp<CSS.Properties["alignContent"]>;
+  justifyItems?: DesygnaGenericProp<CSS.Properties["justifyItems"]>;
+  justifyContent?: DesygnaGenericProp<CSS.Properties["justifyContent"]>;
+  flexWrap?: DesygnaGenericProp<CSS.Properties["flexWrap"]>;
+  flexDirection?: DesygnaGenericProp<CSS.Properties["flexDirection"]>;
+  flex?: DesygnaGenericProp<CSS.Properties["flex"]>;
+  flexGrow?: DesygnaGenericProp<CSS.Properties["flexGrow"]>;
+  flexShrink?: DesygnaGenericProp<CSS.Properties["flexShrink"]>;
+  flexBasis?: DesygnaGenericProp<CSS.Properties["flexBasis"]>;
+  justifySelf?: DesygnaGenericProp<CSS.Properties["justifySelf"]>;
+  alignSelf?: DesygnaGenericProp<CSS.Properties["alignSelf"]>;
+  order?: DesygnaGenericProp<CSS.Properties["order"]>;
 };

@@ -1,19 +1,17 @@
 import * as CSS from "csstype";
-import { ResponsiveProp } from "../types/ResponsiveProp";
+import { DesygnaGenericProp, DesygnaThemeSpace } from "../types/desygna";
 
-export { grid } from "styled-system";
-
-export type GridProps = {
-  gridGap?: ResponsiveProp<CSS.Properties["gap"]>;
-  gridRowGap?: ResponsiveProp<CSS.Properties["rowGap"]>;
-  gridColumnGap?: ResponsiveProp<CSS.Properties["columnGap"]>;
-  gridColumn?: ResponsiveProp<CSS.Properties["gridColumn"]>;
-  gridRow?: ResponsiveProp<CSS.Properties["gridRow"]>;
-  gridArea?: ResponsiveProp<CSS.Properties["gridArea"]>;
-  gridAutoFlow?: ResponsiveProp<CSS.Properties["gridAutoFlow"]>;
-  gridAutoRows?: ResponsiveProp<CSS.Properties["gridAutoRows"]>;
-  gridAutoColumns?: ResponsiveProp<CSS.Properties["gridAutoColumns"]>;
-  gridTemplateRows?: ResponsiveProp<CSS.Properties["gridTemplateRows"]>;
-  gridTemplateColumns?: ResponsiveProp<CSS.Properties["gridTemplateColumns"]>;
-  gridTemplateAreas?: ResponsiveProp<CSS.Properties["gridTemplateAreas"]>;
+export type DesygnaSystemGridProps = {
+  gridGap?: DesygnaGenericProp<CSS.Properties["gap"] | DesygnaThemeSpace | number>;
+  gridRowGap?: DesygnaGenericProp<CSS.Properties["rowGap"] | DesygnaThemeSpace | number>;
+  gridColumnGap?: DesygnaGenericProp<CSS.Properties["columnGap"] | DesygnaThemeSpace | number>;
+  gridColumn?: DesygnaGenericProp<CSS.Properties["gridColumn"]>;
+  gridRow?: DesygnaGenericProp<CSS.Properties["gridRow"]>;
+  gridArea?: DesygnaGenericProp<CSS.Properties["gridArea"]>;
+  gridAutoFlow?: DesygnaGenericProp<CSS.Properties["gridAutoFlow"]>;
+  gridAutoRows?: DesygnaGenericProp<CSS.Properties["gridAutoRows"]>;
+  gridAutoColumns?: DesygnaGenericProp<CSS.Properties["gridAutoColumns"]>;
+  gridTemplateRows?: DesygnaGenericProp<CSS.Properties["gridTemplateRows"]>;
+  gridTemplateColumns?: DesygnaGenericProp<CSS.Properties["gridTemplateColumns"]>;
+  gridTemplateAreas?: DesygnaGenericProp<CSS.Properties["gridTemplateAreas"]>;
 };
