@@ -1,5 +1,45 @@
 # @desygna/desygna-grid
 
+## 4.0.0-pre.3
+
+### Patch Changes
+
+- [#31](https://github.com/desygna/desygna/pull/31) [`ad97dc8`](https://github.com/desygna/desygna/commit/ad97dc830a961f5d33f6a045bf833df89d9f68dd) Thanks [@github-actions](https://github.com/apps/github-actions)! - Update theme types
+
+- Updated dependencies [[`ad97dc8`](https://github.com/desygna/desygna/commit/ad97dc830a961f5d33f6a045bf833df89d9f68dd)]:
+  - @desygna/desygna-core@4.0.0-pre.3
+
+## 4.0.0-pre.2
+
+### Patch Changes
+
+- [`8ff2892`](https://github.com/desygna/desygna/commit/8ff289204e1af337c314e3a09ea37161ce70ee3b) Thanks [@kerimcet](https://github.com/kerimcet)! - Update core
+
+- Updated dependencies [[`aab08ff`](https://github.com/desygna/desygna/commit/aab08ffcf0631d196bc58b321d40f50e3b7ab755), [`8ff2892`](https://github.com/desygna/desygna/commit/8ff289204e1af337c314e3a09ea37161ce70ee3b)]:
+  - @desygna/desygna-core@4.0.0-pre.2
+
+## 4.0.0-pre.1
+
+### Patch Changes
+
+- [`753eae9`](https://github.com/desygna/desygna/commit/753eae9e8c03da67371149bb12098f78da33f526) Thanks [@kerimcet](https://github.com/kerimcet)! - Update `types` field in `package.json` to point to `dist/src/index.d.ts`
+
+  Update `typeRoots` field in `tsconfig.json`
+
+  The $shouldForwardProp property has renamed to shouldForwardProp for ease of use.
+
+- [`753c092`](https://github.com/desygna/desygna/commit/753c0924ecaef4b1fe6890e130d7c5883a311d01) Thanks [@kerimcet](https://github.com/kerimcet)! - Migrate v4 APIs & refactor
+
+- Updated dependencies [[`753eae9`](https://github.com/desygna/desygna/commit/753eae9e8c03da67371149bb12098f78da33f526)]:
+  - @desygna/desygna-core@4.0.0-pre.1
+
+## 4.0.0-dev.0
+
+### Patch Changes
+
+- Updated dependencies [[`5a08e7e`](https://github.com/desygna/desygna/commit/5a08e7e2c31f5f97770b98da216a31a4daddc6d1)]:
+  - @desygna/desygna-core@4.0.0-dev.0
+
 ## 3.0.0
 
 ### Major Changes

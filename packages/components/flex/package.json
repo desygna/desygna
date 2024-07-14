@@ -1,6 +1,6 @@
 {
   "name": "@desygna/desygna-flex",
-  "version": "3.0.0",
+  "version": "4.0.0-pre.3",
   "description": "",
   "author": "Kerim Çetintaş <kerimcetintas@gmail.com>",
   "license": "MIT",
@@ -16,6 +16,6 @@
     "rollup:watch": "rollup -c -w"
   },
   "dependencies": {
-    "@desygna/desygna-core": "3.0.0"
+    "@desygna/desygna-core": "4.0.0-pre.3"
   }
 }

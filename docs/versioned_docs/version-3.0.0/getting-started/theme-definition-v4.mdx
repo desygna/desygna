@@ -1,0 +1,9 @@
+```ts {3,6}
+import "@emotion/react";
+
+import { MyCustomTheme } from "./theme";
+
+declare module "@emotion/react" {
+  export interface Theme extends MyCustomTheme {}
+}
+```

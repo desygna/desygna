@@ -1,13 +1,14 @@
 import { HTMLAttributes } from "react";
 import {
-  styled,
-  composeAll,
-  ComposedProps,
+  $styled,
+  $composeAll,
+  DesygnaComposedProps,
   AsProp
 } from "@desygna/desygna-core";
 
-export type ParagraphProps = HTMLAttributes<HTMLParagraphElement> &
-  ComposedProps &
-  AsProp;
+export type DesygnaParagraphComponentProps =
+  HTMLAttributes<HTMLParagraphElement> & DesygnaComposedProps & AsProp;
 
-export const Paragraph = styled.p<ParagraphProps>(composeAll);
+export const Paragraph = $styled.p<DesygnaParagraphComponentProps>(
+  $composeAll()
+);

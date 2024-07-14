@@ -1,34 +1,22 @@
 ---
 slug: /system/color
-title: Color
+title: $color
 ---
 
-```js
-import { color } from "@desygna/desygna";
-```
+### Props with scale option
 
-A system that enables `color` and `backgroundColor` props.
+| Prop                      | Scale          |
+| :------------------------ | :------------- |
+| `c` or `color`            | `theme.colors` |
+| `bg` or `backgroundColor` | `theme.colors` |
 
-| Prop               | CSS Property    |
-| ------------------ | --------------- |
-| `background`, `bg` | backgroundColor |
-| `color`            | color           |
+### Types
 
-```jsx
-// examples
-// picks the value defined in `theme.colors.blue`
-<Box color='blue' />
-
-// picks up a nested color value using dot notation
-// `theme.colors.gray[0]`
-<Box color='gray.0' />
-
-// raw CSS color value
-<Box color='#f00' />
-
-// background colors
-<Box bg='blue' />
-
-// verbose prop
-<Box backgroundColor='blue' />
+```ts
+export type DesygnaSystemColorProps = {
+  c?: DesygnaGenericProp<CSS.Properties["color"], DesygnaThemeColor>;
+  color?: DesygnaGenericProp<CSS.Properties["color"], DesygnaThemeColor>;
+  backgroundColor?: DesygnaGenericProp<CSS.Properties["backgroundColor"], DesygnaThemeColor>;
+  bg?: DesygnaGenericProp<CSS.Properties["backgroundColor"], DesygnaThemeColor>;
+};
 ```

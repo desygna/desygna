@@ -1,13 +1,18 @@
 import { HTMLAttributes } from "react";
 import {
-  styled,
-  composeAll,
-  ComposedProps,
+  $styled,
+  $composeAll,
+  DesygnaComposedProps,
   AsProp
 } from "@desygna/desygna-core";
 
-export type ButtonComponentProps = HTMLAttributes<HTMLButtonElement> &
-  ComposedProps &
+export type DesygnaButtonComponentProps = Omit<
+  HTMLAttributes<HTMLButtonElement>,
+  "color"
+> &
+  DesygnaComposedProps &
   AsProp;
 
-export const Button = styled.button<ButtonComponentProps>(composeAll);
+export const Button = $styled.button<DesygnaButtonComponentProps>(
+  $composeAll()
+);
