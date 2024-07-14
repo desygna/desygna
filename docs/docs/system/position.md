@@ -1,27 +1,35 @@
 ---
 slug: /system/position
-title: $position
+title: Position
 ---
 
-### Props with scale option
+```js
+import { position } from "@desygna/desygna";
+```
 
-| Prop     | Scale            |
-| :------- | :--------------- |
-| `zIndex` | `theme.zIndices` |
-| `top`    | `theme.spacings` |
-| `right`  | `theme.spacings` |
-| `bottom` | `theme.spacings` |
-| `left`   | `theme.spacings` |
+A system that enables `position` props.
 
-### Types
+| Prop       | CSS Property |
+| ---------- | ------------ |
+| `position` | position     |
+| `zIndex`   | zIndex       |
+| `top`      | top          |
+| `right`    | right        |
+| `bottom`   | bottom       |
+| `left`     | left         |
 
-```ts
-export type DesygnaSystemPositionProps = {
-  position?: DesygnaGenericProp<CSS.Properties["position"]>;
-  zIndex?: DesygnaGenericProp<CSS.Properties["zIndex"] | DesygnaThemeZIndices | number>;
-  top?: DesygnaGenericProp<CSS.Properties["top"] | DesygnaThemeSpace | number>;
-  right?: DesygnaGenericProp<CSS.Properties["right"] | DesygnaThemeSpace | number>;
-  bottom?: DesygnaGenericProp<CSS.Properties["bottom"] | DesygnaThemeSpace | number>;
-  left?: DesygnaGenericProp<CSS.Properties["left"] | DesygnaThemeSpace | number>;
-};
+```jsx
+// position
+<Box position="absolute" />
+
+// zIndex
+<Absolute zIndex={2} />
+
+// top, right, bottom, left
+<Fixed
+  top="0"
+  right="0"
+  bottom="0"
+  left="0"
+/>
 ```

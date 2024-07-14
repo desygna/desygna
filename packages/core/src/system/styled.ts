@@ -1,3 +1,1 @@
-import { default as _styled, CreateStyled } from "@emotion/styled";
-
-export const $styled: CreateStyled = _styled;
+export { default as styled } from "@emotion/styled";

@@ -1,25 +1,50 @@
-import { type DesygnaSystemAnimationProps } from "./animation";
-import { type DesygnaSystemBackgroundProps } from "./background";
-import { type DesygnaSystemBorderProps } from "./border";
-import { type DesygnaSystemColorProps } from "./color";
-import { type DesygnaSystemCursorProps } from "./cursor";
-import { type DesygnaSystemFlexboxProps } from "./flexbox";
-import { type DesygnaSystemGridProps } from "./grid";
-import { type DesygnaSystemLayoutProps } from "./layout";
-import { type DesygnaSystemPositionProps } from "./position";
-import { type DesygnaSystemShadowProps } from "./shadow";
-import { type DesygnaSystemSpaceProps } from "./space";
-import { type DesygnaSystemTypographyProps } from "./typography";
+import { compose } from "styled-system";
 
-export type DesygnaComposedProps = DesygnaSystemAnimationProps &
-  DesygnaSystemBackgroundProps &
-  DesygnaSystemBorderProps &
-  DesygnaSystemColorProps &
-  DesygnaSystemCursorProps &
-  DesygnaSystemFlexboxProps &
-  DesygnaSystemGridProps &
-  DesygnaSystemLayoutProps &
-  DesygnaSystemPositionProps &
-  DesygnaSystemShadowProps &
-  DesygnaSystemSpaceProps &
-  DesygnaSystemTypographyProps;
+import { background } from "./background";
+import type { BackgroundProps } from "./background";
+import { border } from "./border";
+import type { BorderProps } from "./border";
+import { color } from "./color";
+import type { ColorProps } from "./color";
+import { cursor } from "./cursor";
+import type { CursorProps } from "./cursor";
+import { flexbox } from "./flexbox";
+import type { FlexboxProps } from "./flexbox";
+import { grid } from "./grid";
+import type { GridProps } from "./grid";
+import { layout } from "./layout";
+import type { LayoutProps } from "./layout";
+import { position } from "./position";
+import type { PositionProps } from "./position";
+import { shadow } from "./shadow";
+import type { ShadowProps } from "./shadow";
+import { space } from "./space";
+import type { SpaceProps } from "./space";
+import { typography } from "./typography";
+import type { TypographyProps } from "./typography";
+
+export type ComposedProps = BackgroundProps &
+  BorderProps &
+  ColorProps &
+  CursorProps &
+  FlexboxProps &
+  GridProps &
+  LayoutProps &
+  PositionProps &
+  ShadowProps &
+  SpaceProps &
+  TypographyProps;
+
+export const composeAll = compose(
+  background,
+  border,
+  color,
+  cursor,
+  flexbox,
+  grid,
+  layout,
+  position,
+  shadow,
+  space,
+  typography
+);

@@ -1,24 +1,58 @@
 ---
 slug: /system/flexbox
-title: $flexbox
+title: Flexbox
 ---
 
-### Types
+```js
+import { flexbox } from "@desygna/desygna";
+```
 
-```ts
-export type DesygnaSystemFlexboxProps = {
-  alignItems?: DesygnaGenericProp<CSS.Properties["alignItems"]>;
-  alignContent?: DesygnaGenericProp<CSS.Properties["alignContent"]>;
-  justifyItems?: DesygnaGenericProp<CSS.Properties["justifyItems"]>;
-  justifyContent?: DesygnaGenericProp<CSS.Properties["justifyContent"]>;
-  flexWrap?: DesygnaGenericProp<CSS.Properties["flexWrap"]>;
-  flexDirection?: DesygnaGenericProp<CSS.Properties["flexDirection"]>;
-  flex?: DesygnaGenericProp<CSS.Properties["flex"]>;
-  flexGrow?: DesygnaGenericProp<CSS.Properties["flexGrow"]>;
-  flexShrink?: DesygnaGenericProp<CSS.Properties["flexShrink"]>;
-  flexBasis?: DesygnaGenericProp<CSS.Properties["flexBasis"]>;
-  justifySelf?: DesygnaGenericProp<CSS.Properties["justifySelf"]>;
-  alignSelf?: DesygnaGenericProp<CSS.Properties["alignSelf"]>;
-  order?: DesygnaGenericProp<CSS.Properties["order"]>;
-};
+A system that enables `flexbox` props.
+
+| Prop             | CSS Property   |
+| ---------------- | -------------- |
+| `alignItems`     | alignItems     |
+| `alignContent`   | alignContent   |
+| `justifyItems`   | justifyItems   |
+| `justifyContent` | justifyContent |
+| `flexWrap`       | flexWrap       |
+| `flexDirection`  | flexDirection  |
+| `flex`           | flex           |
+| `flexGrow`       | flexGrow       |
+| `flexShrink`     | flexShrink     |
+| `flexBasis`      | flexBasis      |
+| `justifySelf`    | justifySelf    |
+| `alignSelf`      | alignSelf      |
+| `order`          | order          |
+
+```jsx
+// alignItems
+<Flex alignItems='center' />
+
+// alignContent
+<Flex alignContent='center' />
+
+// justifyContent
+<Flex justifyContent='center' />
+
+// flexWrap
+<Flex flexWrap='wrap' />
+
+// flexBasis
+<Flex flexBasis='auto' />
+
+// flexDirection
+<Flex flexDirection='column' />
+
+// flex
+<Box flex='1 1 auto' />
+
+// justifySelf
+<Box justifySelf='center' />
+
+// alignSelf
+<Box alignSelf='center' />
+
+// order
+<Box order='2' />
 ```

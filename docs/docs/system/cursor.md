@@ -1,12 +1,16 @@
 ---
 slug: /system/cursor
-title: $cursor
+title: Cursor
 ---
 
-### Types
+```js
+import { cursor } from "@desygna/desygna";
+```
 
-```ts
-export type DesygnaSystemCursorProps = {
-  cursor?: DesygnaGenericProp<CSS.Properties["cursor"]>;
-};
+A system that enables `cursor` prop.
+
+```jsx
+<Box cursor="pointer" />
+
+<Box cursor="not-allowed" />
 ```
