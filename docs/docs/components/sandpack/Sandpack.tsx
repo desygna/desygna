@@ -1,16 +1,8 @@
 import React from "react";
-import {
-  OpenInCodeSandboxButton,
-  Sandpack,
-  SandpackCodeEditor,
-  SandpackFileExplorer,
-  SandpackLayout,
-  SandpackPreview,
-  SandpackProvider,
-  UnstyledOpenInCodeSandboxButton
-} from "@codesandbox/sandpack-react";
+import { Sandpack } from "@codesandbox/sandpack-react";
 import { monokaiPro } from "@codesandbox/sandpack-themes";
 import { rootCode } from "./rootCode";
+import { desygnaVersion } from "@site/docs/desygnaVersion";
 
 export interface CommonSandpackProps {
   files?: Record<string, string>;
@@ -18,30 +10,19 @@ export interface CommonSandpackProps {
   editorHeight?: number;
 }
 
-const tsconfig = `{
-  "include": [
-    "./**/*"
-  ],
-  "compilerOptions": {
-    "strict": true,
-    "esModuleInterop": true,
-    "lib": [ "dom", "es2015" ],
-    "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react"
-  }
-}
-`;
-
-export const CommonSandpack = ({ files, deps, editorHeight = 800 }: CommonSandpackProps) => {
+export const CommonSandpack = ({
+  files,
+  deps,
+  editorHeight = 800
+}: CommonSandpackProps) => {
   return (
-    <SandpackProvider
+    <Sandpack
       theme={monokaiPro}
+      template="react-ts"
       files={{
         "/index.tsx": rootCode,
-        "/tsconfig.json": tsconfig,
         ...files
       }}
-      template="react-ts"
       customSetup={{
         dependencies: {
           react: "17.0.2",
@@ -49,39 +30,32 @@ export const CommonSandpack = ({ files, deps, editorHeight = 800 }: CommonSandpa
           "react-scripts": "4.0.3",
           "@emotion/react": "^11.10.0",
           "@emotion/styled": "^11.10.0",
-          "styled-system": "^5.1.5",
-          "@styled-system/should-forward-prop": "^5.1.5",
-          "@desygna/desygna": "4.0.0-pre.2",
+          "@desygna/desygna": desygnaVersion,
           ...deps
-        },
-        devDependencies: {
-          "@types/react": "^17.0.2"
         }
       }}
-    >
-      <SandpackLayout>
-        <SandpackFileExplorer />
-        <SandpackCodeEditor />
-      </SandpackLayout>
-      <pre style={{ marginTop: 8 }}>
-        <UnstyledOpenInCodeSandboxButton className="button button--primary button--md">
-          Open in sandbox
-        </UnstyledOpenInCodeSandboxButton>
-      </pre>
-    </SandpackProvider>
+      options={{
+        showLineNumbers: true,
+        showInlineErrors: true,
+        editorHeight
+      }}
+    />
   );
 };
 
-export const CommonSandpackV4 = ({ files, deps, editorHeight = 800 }: CommonSandpackProps) => {
+export const CommonSandpackV4Rc1 = ({
+  files,
+  deps,
+  editorHeight = 800
+}: CommonSandpackProps) => {
   return (
-    <SandpackProvider
+    <Sandpack
       theme={monokaiPro}
+      template="react-ts"
       files={{
         "/index.tsx": rootCode,
-        "/tsconfig.json": tsconfig,
         ...files
       }}
-      template="react-ts"
       customSetup={{
         dependencies: {
           react: "17.0.2",
@@ -91,29 +65,15 @@ export const CommonSandpackV4 = ({ files, deps, editorHeight = 800 }: CommonSand
           "@emotion/styled": "^11.10.0",
           "styled-system": "^5.1.5",
           "@styled-system/should-forward-prop": "^5.1.5",
-          "@desygna/desygna-core": "4.0.0-pre.2",
+          "@desygna/desygna-core": "4.0.0-rc.1",
           ...deps
-        },
-        devDependencies: {
-          "@types/react": "^17.0.2"
         }
       }}
-
-      // options={{
-      //   showLineNumbers: true,
-      //   showInlineErrors: true,
-      //   editorHeight
-      // }}
-    >
-      <SandpackLayout>
-        <SandpackFileExplorer />
-        <SandpackCodeEditor />
-      </SandpackLayout>
-      <pre style={{ marginTop: 8 }}>
-        <UnstyledOpenInCodeSandboxButton className="button button--primary button--md">
-          Open in sandbox
-        </UnstyledOpenInCodeSandboxButton>
-      </pre>
-    </SandpackProvider>
+      options={{
+        showLineNumbers: true,
+        showInlineErrors: true,
+        editorHeight
+      }}
+    />
   );
 };

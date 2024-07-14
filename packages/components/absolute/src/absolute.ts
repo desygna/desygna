@@ -1,23 +1,18 @@
 import { HTMLAttributes } from "react";
 import {
-  $styled,
+  styled,
   AsProp,
-  DesygnaSystemPositionProps,
-  $position,
-  $compose,
-  $space,
-  $layout,
-  DesygnaSystemSpaceProps,
-  DesygnaSystemLayoutProps
+  PositionProps,
+  position,
+  compose
 } from "@desygna/desygna-core";
 
-export type DesygnaAbsoluteComponentProps = HTMLAttributes<HTMLDivElement> &
-  DesygnaSystemPositionProps &
-  DesygnaSystemSpaceProps &
-  DesygnaSystemLayoutProps &
+export type AbsoluteComponentProps = HTMLAttributes<HTMLDivElement> &
+  PositionProps &
   AsProp;
 
-export const Absolute = $styled.div<DesygnaAbsoluteComponentProps>(
-  { position: "absolute" },
-  $compose($position, $space, $layout)
-);
+export const Absolute = styled.div<AbsoluteComponentProps>(compose(position));
+
+Absolute.defaultProps = {
+  position: "absolute"
+};

@@ -1,1 +1,1 @@
-export const desygnaVersion = "4.0.0-pre.1";
+export const desygnaVersion = "1.3.0";

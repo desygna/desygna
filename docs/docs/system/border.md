@@ -1,84 +1,60 @@
 ---
 slug: /system/border
-title: $border
+title: Border
 ---
 
-### Props with scale option
+```js
+import { border } from "@desygna/desyna";
+```
 
-| Prop                                        | Scale                |
-| :------------------------------------------ | :------------------- |
-| `border`                                    | `theme.borders`      |
-| `borderRadius` (or any border radius prop.) | `theme.radii`        |
-| `borderX`                                   | `theme.borders`      |
-| `borderY`                                   | `theme.borders`      |
-| `borderTop` or `bt`                         | `theme.borders`      |
-| `borderBottom` or `bb`                      | `theme.borders`      |
-| `borderRight` or `br`                       | `theme.borders`      |
-| `borderLeft` or `bl`                        | `theme.borders`      |
-| `borderStyle` (or any border style prop.)   | `theme.borderStyles` |
-| `borderWidth` (or any border width prop.)   | `theme.borderWidths` |
-| `outlineColor`                              | `theme.colors`       |
+A system that enables `border` props.
 
-### Types
+| Prop                      | CSS Property             |
+| ------------------------- | ------------------------ |
+| `border`                  | border                   |
+| `borderWidth`             | borderWidth              |
+| `borderStyle`             | borderStyle              |
+| `borderColor`             | borderColor              |
+| `borderRadius`            | borderRadius             |
+| `borderTop`               | borderTop                |
+| `borderTopWidth`          | borderTopWidth           |
+| `borderTopStyle`          | borderTopStyle           |
+| `borderTopColor`          | borderTopColor           |
+| `borderTopLeftRadius`     | borderTopLeftRadius      |
+| `borderTopRightRadius`    | borderTopRightRadius     |
+| `borderRight`             | borderRight              |
+| `borderRightWidth`        | borderRightWidth         |
+| `borderRightStyle`        | borderRightStyle         |
+| `borderRightColor`        | borderRightColor         |
+| `borderBottom`            | borderBottom             |
+| `borderBottomWidth`       | borderBottomWidth        |
+| `borderBottomStyle`       | borderBottomStyle        |
+| `borderBottomColor`       | borderBottomColor        |
+| `borderBottomLeftRadius`  | borderBottomLeftRadius   |
+| `borderBottomRightRadius` | borderBottomRightRadius  |
+| `borderLeft`              | borderLeft               |
+| `borderLeftWidth`         | borderLeftWidth          |
+| `borderLeftStyle`         | borderLeftStyle          |
+| `borderLeftColor`         | borderLeftColor          |
+| `borderX`                 | borderLeft & borderRight |
+| `borderY`                 | borderTop & borderBottom |
 
-```ts
-export type DesygnaSystemBorderProps = {
-  border?: DesygnaGenericProp<CSS.Properties["border"] | DesygnaThemeBorder>;
-  borderX?:
-    | DesygnaGenericProp<CSS.Properties["borderLeft"] | DesygnaThemeBorder>
-    | DesygnaGenericProp<CSS.Properties["borderRight"] | DesygnaThemeBorder>;
-  borderY?:
-    | DesygnaGenericProp<CSS.Properties["borderTop"] | DesygnaThemeBorder>
-    | DesygnaGenericProp<CSS.Properties["borderBottom"] | DesygnaThemeBorder>;
-  borderTop?: DesygnaGenericProp<CSS.Properties["borderTop"] | DesygnaThemeBorder>;
-  borderBottom?: DesygnaGenericProp<CSS.Properties["borderBottom"] | DesygnaThemeBorder>;
-  borderRight?: DesygnaGenericProp<CSS.Properties["borderRight"] | DesygnaThemeBorder>;
-  borderLeft?: DesygnaGenericProp<CSS.Properties["borderLeft"] | DesygnaThemeBorder>;
-  borderStyle?: DesygnaGenericProp<CSS.Properties["borderStyle"] | DesygnaThemeBorderStyle>;
-  borderWidth?: DesygnaGenericProp<
-    CSS.Properties["borderWidth"] | DesygnaThemeBorderWidth | number
-  >;
-  borderColor?: DesygnaGenericProp<CSS.Properties["borderColor"] | DesygnaThemeColor>;
-  borderRadius?: DesygnaGenericProp<CSS.Properties["borderRadius"] | DesygnaThemeBorderRadius>;
-  borderTopStyle?: DesygnaGenericProp<CSS.Properties["borderStyle"] | DesygnaThemeBorderStyle>;
-  borderTopWidth?: DesygnaGenericProp<
-    CSS.Properties["borderTopWidth"] | DesygnaThemeBorderWidth | number
-  >;
-  borderTopColor?: DesygnaGenericProp<CSS.Properties["borderColor"] | DesygnaThemeColor>;
-  borderTopLeftRadius?: DesygnaGenericProp<
-    CSS.Properties["borderTopLeftRadius"] | DesygnaThemeBorderRadius
-  >;
-  borderTopRightRadius?: DesygnaGenericProp<
-    CSS.Properties["borderTopRightRadius"] | DesygnaThemeBorderRadius
-  >;
-  borderBottomStyle?: DesygnaGenericProp<CSS.Properties["borderStyle"] | DesygnaThemeBorderStyle>;
-  borderBottomWidth?: DesygnaGenericProp<
-    CSS.Properties["borderBottomWidth"] | DesygnaThemeBorderWidth | number
-  >;
-  borderBottomColor?: DesygnaGenericProp<CSS.Properties["borderColor"] | DesygnaThemeColor>;
-  borderBottomLeftRadius?: DesygnaGenericProp<
-    CSS.Properties["borderRadius"] | DesygnaThemeBorderRadius
-  >;
-  borderBottomRightRadius?: DesygnaGenericProp<
-    CSS.Properties["borderBottomRightRadius"] | DesygnaThemeBorderRadius
-  >;
-  borderLeftStyle?: DesygnaGenericProp<CSS.Properties["borderStyle"] | DesygnaThemeBorderStyle>;
-  borderLeftWidth?: DesygnaGenericProp<
-    CSS.Properties["borderLeftWidth"] | DesygnaThemeBorderWidth | number
-  >;
-  borderLeftColor?: DesygnaGenericProp<CSS.Properties["borderColor"] | DesygnaThemeColor>;
-  borderRightStyle?: DesygnaGenericProp<CSS.Properties["borderStyle"] | DesygnaThemeBorderStyle>;
-  borderRightWidth?: DesygnaGenericProp<
-    CSS.Properties["borderRightWidth"] | DesygnaThemeBorderWidth | number
-  >;
-  borderRightColor?: DesygnaGenericProp<CSS.Properties["borderColor"] | DesygnaThemeColor>;
-  bl?: DesygnaGenericProp<CSS.Properties["borderLeft"] | DesygnaThemeBorder>;
-  br?: DesygnaGenericProp<CSS.Properties["borderRight"] | DesygnaThemeBorder>;
-  bt?: DesygnaGenericProp<CSS.Properties["borderTop"] | DesygnaThemeBorder>;
-  bb?: DesygnaGenericProp<CSS.Properties["borderBottom"] | DesygnaThemeBorder>;
-  outline?: DesygnaGenericProp<CSS.Properties["outline"]>;
-  outlineColor?: DesygnaGenericProp<CSS.Properties["outlineColor"] | DesygnaThemeColor>;
-  outlineWidth?: DesygnaGenericProp<CSS.Properties["outlineWidth"]>;
-  outlineOffset?: DesygnaGenericProp<CSS.Properties["outlineOffset"]>;
-};
+```jsx
+<Box border='1px solid' />
+<Box borderTop='1px solid' />
+<Box borderRight='1px solid' />
+<Box borderBottom='1px solid' />
+<Box borderLeft='1px solid' />
+
+// borderWidth
+<Box borderWidth='4px' />
+
+// borderStyle
+<Box borderStyle='dotted' />
+
+// borderColor
+<Box borderColor='blue' />
+
+// borderRadius
+<Box borderRadius={4} />
 ```

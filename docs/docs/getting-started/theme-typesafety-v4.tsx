@@ -1,7 +1,9 @@
 import React from "react";
-import { CommonSandpackV4 } from "../components/sandpack";
+import { CommonSandpackV4Rc1 } from "../components/sandpack";
 
-const App = `/**
+const App = `
+/**
+ *
  * To get typings in your code editor,
  * you need to have a theme.ts file for your custom theme and a desygna.d.ts file
  * for type definitions of the Desygna library.
@@ -10,7 +12,6 @@ const App = `/**
  * for your custom theme properties, making it easier to write type-safe components.
  *
  */
-import React from "react";
 import { 
   $styled, 
   $composeAll, 
@@ -18,7 +19,7 @@ import {
   DesygnaProvider, 
   DesygnaComposedProps
 } from "@desygna/desygna-core";
-import { customTheme } from "./src/theme";
+import { customTheme } from "./theme";
 
 export type CustomBoxProps = {
   id?: string;
@@ -201,6 +202,9 @@ export interface MyCustomTheme extends DesygnaTheme {
   space: {
     full: string;
   };
+  animations: {
+    _fadeIn: string;
+  };
   fonts: {
     heading: string;
     body: string;
@@ -220,14 +224,22 @@ export interface MyCustomTheme extends DesygnaTheme {
   };
 }
 
+export const customThemeBreakpoints = [
+  "480px",
+  "640px",
+  "768px",
+  "1024px",
+  "1280px"
+];
+
+customThemeBreakpoints["sm"] = customThemeBreakpoints[0];
+customThemeBreakpoints["md"] = customThemeBreakpoints[1];
+customThemeBreakpoints["lg"] = customThemeBreakpoints[2];
+customThemeBreakpoints["xl"] = customThemeBreakpoints[3];
+customThemeBreakpoints["2xl"] = customThemeBreakpoints[4];
+
 export const customTheme = createDesygnaTheme({
-  breakpoints: {
-    sm: "480px",
-    md: "640px",
-    lg: "768px",
-    xl: "1024px",
-    xxl: "1280px"
-  },
+  breakpoints: customThemeBreakpoints,
   fonts: {
     body: 'Open Sans, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     heading: "Open Sans, system-ui",
@@ -285,13 +297,12 @@ export const customTheme = createDesygnaTheme({
 
 export const ThemeTypesafetyV4Sandpack = () => {
   return (
-    <CommonSandpackV4
+    <CommonSandpackV4Rc1
       files={{
-        "/src/theme.ts": theme,
-        "/src/desygna.d.ts": desygnaDts,
+        "/theme.ts": theme,
+        "/desygna.d.ts": desygnaDts,
         "/App.tsx": App
       }}
-      editorHeight={600}
     />
   );
 };

@@ -9,20 +9,14 @@ const sidebars = {
     },
     {
       type: "doc",
-      id: "getting-started/migrating",
-      label: "Migration Guide"
+      id: "getting-started/v4-rc",
+      label: "v4-rc.1 notes (breaking changes)"
     },
     {
       type: "category",
       label: "Getting Started",
       collapsed: false,
-      items: ["getting-started/installation", "getting-started/theming"]
-    },
-    {
-      type: "category",
-      label: "Styled API",
-      collapsed: false,
-      items: ["getting-started/styled-api"]
+      items: ["getting-started/installation", "getting-started/styled-api"]
     },
     {
       type: "category",
@@ -30,7 +24,6 @@ const sidebars = {
       collapsed: false,
       items: [
         "system/introduction",
-        "system/animation",
         "system/background",
         "system/border",
         "system/color",
@@ -51,16 +44,10 @@ const sidebars = {
       items: ["utilities/compose", "utilities/compose-all", "utilities/variant"]
     },
     {
-      type: "category",
-      label: "Examples",
-      collapsed: false,
-      items: [
-        {
-          type: "link",
-          label: "Vite + Desygna v4",
-          href: "https://github.com/desygna/desygna-v4-vite-example"
-        }
-      ]
+      type: "html",
+      value:
+        "<div class='theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__link'>Components <button class='desygna-sidebar-soon-button'>soon</button></div>",
+      defaultStyle: true
     }
   ]
 };

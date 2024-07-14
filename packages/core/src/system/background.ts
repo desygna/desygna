@@ -1,13 +1,12 @@
 import * as CSS from "csstype";
-import { DesygnaGenericProp, DesygnaThemeColor } from "../types/desygna";
+import { ResponsiveProp } from "../types/ResponsiveProp";
 
-export type DesygnaSystemBackgroundProps = {
-  background?: DesygnaGenericProp<CSS.Properties["background"] | DesygnaThemeColor>;
-  backgroundImage?: DesygnaGenericProp<CSS.Properties["backgroundImage"]>;
-  backgroundSize?: DesygnaGenericProp<CSS.Properties["backgroundSize"]>;
-  backgroundPosition?: DesygnaGenericProp<CSS.Properties["backgroundPosition"]>;
-  backgroundRepeat?: DesygnaGenericProp<CSS.Properties["backgroundRepeat"]>;
-  backgroundAttachment?: DesygnaGenericProp<CSS.Properties["backgroundAttachment"]>;
-  backgroundClip?: DesygnaGenericProp<CSS.Properties["backgroundClip"]>;
-  backgroundOrigin?: DesygnaGenericProp<CSS.Properties["backgroundOrigin"]>;
+export { background } from "styled-system";
+
+export type BackgroundProps = {
+  background?: ResponsiveProp<CSS.Properties["background"]>;
+  backgroundImage?: ResponsiveProp<CSS.Properties["backgroundImage"]>;
+  backgroundSize?: ResponsiveProp<CSS.Properties["backgroundSize"]>;
+  backgroundPosition?: ResponsiveProp<CSS.Properties["backgroundPosition"]>;
+  backgroundRepeat?: ResponsiveProp<CSS.Properties["backgroundRepeat"]>;
 };
