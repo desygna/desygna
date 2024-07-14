@@ -1,0 +1,145 @@
+---
+slug: /migrating
+title: Migrating from v3
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import TOCInline from "@theme/TOCInline";
+
+import StyledAPIV3 from "./styled-api-usage-v3.mdx";
+import StyledAPIV4 from "./styled-api-usage-v4.mdx";
+
+import ThemeDefinitionV4 from "./theme-definition-v4.mdx";
+import ThemeCustomizationV4 from "./theme-customization-v4.mdx";
+import ThemeTypesafetyV4 from "./theme-typesafety-v4.mdx";
+
+import { ThemeTypesafetyV4Sandpack } from "./theme-typesafety-v4.tsx";
+
+<TOCInline toc={toc} />
+
+## Using v4
+
+First, you need to install peer dependencies:
+
+```bash npm2yarn
+npm install @emotion/react@^11.10.0 @emotion/styled@^11.10.0 styled-system@^5.1.5 @styled-system/should-forward-prop@^5.1.5
+```
+
+Install the package through `npm` or `yarn`:
+
+```bash npm2yarn
+npm install @desygna/desygna-core@^4.0.0
+// or
+// npm install @desygna/desygna@^4.0.0
+```
+
+## Improvements
+
+### Type-safety on theme variables
+
+You can define your theme as a type definition, which will allow you to create
+components that are fully type-safe using your custom theme tokens. With this
+approach, you only need to include a few files to achieve this functionality.
+
+By having a theme.ts file that defines your custom theme and a desygna.d.ts file
+that provides type definitions for the Desygna library, you can get typings in
+your code editor (such as VS Code). This means that your editor will provide
+autocomplete suggestions and type-checking for your custom theme properties,
+making it easier and faster to create type-safe components.
+
+:::note INFORMATION
+
+Codesandbox example previews are not working for Desygna version 4. <br /> We are still investigating but you can use "Open in Sandbox" button.
+
+:::
+
+<Tabs defaultValue="sandpack" values={[{ label: "Minimal setup", value: "sandpack" }]}>
+  <TabItem value="sandpack">
+    <ThemeTypesafetyV4Sandpack />
+  </TabItem>
+</Tabs>
+
+---
+
+## Additions
+
+- `shouldForwardProp`
+
+- `$animation` system utility
+
+- `DesygnaGenericProp` type
+
+- `DesygnaGenericBreakpointValues` type
+
+---
+
+## Deprecated
+
+- `ResponsiveProp` type has deprecated
+
+---
+
+## Breaking Changes
+
+- `DesygnaTheme` type scheme has changed
+
+- `styled` has changed as `$styled`
+
+:::caution Styled API Changes
+
+<Tabs
+  defaultValue="v4"
+  values={[
+    { label: "Desygna v3", value: "v3" },
+    { label: "Desygna v4", value: "v4" }
+  ]}
+>
+  <TabItem value="v3">
+    <StyledAPIV3 />
+  </TabItem>
+  <TabItem value="v4">
+    <StyledAPIV4 />
+  </TabItem>
+</Tabs>
+
+:::
+
+---
+
+- `css` has changed as `$css`
+
+- `variant` has changed as `$variant`
+
+- `compose` has changed as `$compose`
+
+- `composeAll` has changed as `$composeAll`
+
+  ```
+   // Usage:
+   $composeAll()
+  ```
+
+<br />
+
+- `background` has changed as `$background`
+
+- `border` has changed as `$border`
+
+- `color` has changed as `$color`
+
+- `cursor` has changed as `$cursor`
+
+- `flexbox` has changed as `$flexbox`
+
+- `grid` has changed as `$grid`
+
+- `layout` has changed as `$layout`
+
+- `position` has changed as `$position`
+
+- `shadow` has changed as `$shadow`
+
+- `space` has changed as `$space`
+
+- `typography` has changed as `$typography`

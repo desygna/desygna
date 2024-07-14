@@ -1,30 +1,41 @@
 ---
 slug: /utilities/compose
-title: Compose
+title: $compose
 ---
 
-The `styled` API can take `compose` utility as argument which composes system
+The `styled` API can take `$compose` utility as argument which composes system
 utilities.
 
 ```ts
-import { styled, compose, color, flexbox, space } from "@desygna/desygna";
+import {
+  $styled,
+  $compose,
+  $color,
+  $flexbox,
+  $space,
+  DesygnaSystemColorProps,
+  DesygnaSystemLayoutProps,
+  DesygnaSystemSpaceProps
+} from "@desygna/desygna";
 
-const Container = styled.div(
-  // default styles
-  { display: "flex" },
-  // -> here we use compose
-  compose(color, flexbox, space)
+type ContainerProps = DesygnaSystemColorProps &
+  DesygnaSystemLayoutProps &
+  DesygnaSystemSpaceProps;
+
+const Container = $styled.div<ContainerProps>(
+  { display: "flex" }, // default styles
+  $compose($color, $flexbox, $space) // -> here we use $compose
 );
 
 // or you can use system utilities that way:
-const AnotherContainer = styled.div`
-  ${color}
-  ${flexbox}
-  ${space}
+const AnotherContainer = $styled.div<ContainerProps>`
+  ${$color}
+  ${$flexbox}
+  ${$space}
 `;
 ```
 
-So, it means that you can use the `flexbox`, `color` and `space` props in your
+So, it means that you can use the `$flexbox`, `$color` and `$space` props in your
 `Container` component.
 
 ```tsx
