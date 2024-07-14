@@ -1,0 +1,29 @@
+```ts
+/**
+ *
+ *  Changes:
+ *    styled        $styled
+ *
+ *  Additions:
+ *    shouldForwardProp
+ *
+ *  You can use `shouldForwardProp` for prop forwarding
+ *
+ */
+import { $styled, shouldForwardProp } from "@desygna/desygna-core";
+
+export type BoxProps = {
+  id?: string;
+  role?: string;
+  className?: string;
+  tabIndex?: number;
+};
+
+export const Box = $styled("div", {
+  shouldForwardProp
+})<BoxProps>({
+  boxSizing: "border-box",
+  minWidth: 0,
+  transition: "all 0.2s ease"
+});
+```

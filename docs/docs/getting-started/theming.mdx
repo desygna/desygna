@@ -1,0 +1,124 @@
+---
+slug: /theming
+title: Theming
+---
+
+import Tabs from "@theme/Tabs";
+import Theme from "./theming/theme.mdx";
+import DesygnaConfig from "./theming/desygna.mdx";
+import SetupProvider from "./theming/provider.mdx";
+
+## Introduction
+
+To create a consistent and scalable theming system for CSS styles, you can design your theme object with a structured approach that includes scales for typography, spacing, and colors.
+The following example demonstrates how to define a theme object with these scales, including the use of arrays for ordinal values and plain objects for named values.
+This setup can be easily extended for more complex systems.
+
+By following these three steps, you can create a scalable and consistent styling system that integrates smoothly with your components, ensuring a unified design language across your application.
+
+**1. Theme Object**
+
+> Create a theme object that conforms to the type definitions.
+
+** 2. Type Definitions**
+
+> Define TypeScript types for different scales such as typography, spacing, and colors to ensure consistency and type safety.
+
+**3. Using the Theme**
+
+> Apply the theme in components by accessing the various scales and properties defined in the theme object.
+
+<br />
+
+This approach helps create a consistent styling system, allowing for easy adjustments and extensions
+as your design needs evolve.
+
+## Setting Up
+
+### 1. Configure Theme
+
+To get typings in your editor, you should create a `d.ts` file.
+
+<Tabs>
+  <TabItem value="theme.ts">
+    <Theme />
+  </TabItem>
+</Tabs>
+
+### 2. Create `d.ts` file
+
+<Tabs>
+  <TabItem value="desygna.d.ts">
+    <DesygnaConfig />
+  </TabItem>
+
+</Tabs>
+
+### 3. Use `DesygnaProvider`
+
+<Tabs>
+  <TabItem value="App.tsx">
+    <SetupProvider />
+  </TabItem>
+
+</Tabs>
+
+---
+
+### Types
+
+```ts
+export interface DesygnaTheme {
+  animations?: {
+    [key: string]: string;
+  };
+  breakpoints?: {
+    [key: string]: string;
+  };
+  borders?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  borderWidths?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  borderStyles?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  colors?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  fonts?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  fontSizes?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  fontWeights?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  lineHeights?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  letterSpacings?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  radii?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  shadows?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  sizes?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  spacings?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  transitions?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  zIndices?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+}
+```

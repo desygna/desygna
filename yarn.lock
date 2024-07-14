@@ -1689,21 +1689,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-core@npm:4.0.0-pre.2":
-  version: 4.0.0-pre.2
-  resolution: "@desygna/desygna-core@npm:4.0.0-pre.2"
-  peerDependencies:
-    "@emotion/react": ^11.10.0
-    "@emotion/styled": ^11.10.0
-    "@styled-system/should-forward-prop": ^5.1.5
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-    styled-system: ^5.1.5
-  checksum: 2b0d52fcadd0c7d6322d72ef1e5a1d5ef653e26affb3ba248a792769197b936e6f4d235f5c0ea12bb217661f75158cebb13a9a62395299990fb635d7609103da
-  languageName: node
-  linkType: hard
-
-"@desygna/desygna-core@workspace:packages/core":
+"@desygna/desygna-core@4.0.0-pre.2, @desygna/desygna-core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-core@workspace:packages/core"
   dependencies:

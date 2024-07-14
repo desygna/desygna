@@ -1,90 +1,75 @@
 ---
 slug: /system/layout
-title: Layout
+title: $layout
 ---
 
-```js
-import { layout } from "@desygna/desygna";
-```
+### Props with scale option
 
-A system that enables `layout` props.
+| Prop                  | Scale          |
+| :-------------------- | :------------- |
+| `w` or `width`        | `theme.sizes`  |
+| `h` or `height`       | `theme.sizes`  |
+| `minW` or `minWidth`  | `theme.sizes`  |
+| `maxW` or `maxWidth`  | `theme.sizes`  |
+| `minH` or `minHeight` | `theme.sizes`  |
+| `maxH` or `maxHeight` | `theme.sizes`  |
+| `fill`                | `theme.colors` |
 
-| Prop                | CSS Property  |
-| ------------------- | ------------- |
-| `width`, `w`        | width         |
-| `height`, `h`       | height        |
-| `display`           | display       |
-| `minWidth`, `minW`  | minWidth      |
-| `minHeight`, `minH` | minHeight     |
-| `maxWidth`, `maxW`  | maxWidth      |
-| `maxHeight`, `maxH` | maxHeight     |
-| `size`              | size          |
-| `verticalAlign`     | verticalAlign |
-| `overflow`          | overflow      |
-| `overflowX`         | overflowX     |
-| `overflowY`         | overflowY     |
+### Types
 
-The `width` prop is transformed based on the following:
-
-- Numbers from 0-1 are converted to percentage widths.
-- Numbers greater than 1 are converted to pixel values.
-- String values are passed as raw CSS values.
-- And arrays are converted to [responsive width styles][responsive-styles].
-- If `theme.sizes` is defined, the `width` prop will attempt to pick up values
-  from the theme
-
-```jsx
-// examples
-
-// width `50%`
-<Box width={1/2} />
-
-// width `256px`
-<Box width={256} />
-
-// width `'2em'`
-<Box width='2em' />
-
-// width `100%` on all viewports and `50%` from the smallest breakpoint and up
-<Box width={[ 1, 1/2 ]} />
-
-// width from `theme.sizes`
-<Box width='medium' />
-
-// display
-<Box display='inline-block' />
-<Box display={[ 'block', 'inline-block' ]} />
-
-// maxWidth
-<Box maxWidth={1024} />
-<Box maxWidth={[ 768, null, null, 1024 ]} />
-
-// minWidth
-<Box minWidth={128} />
-<Box minWidth={[ 96, 128 ]} />
-
-// height
-<Box height={64} />
-<Box height={[ 48, 64 ]} />
-
-// maxHeight
-<Box maxHeight={512} />
-<Box maxHeight={[ 384, 512 ]} />
-
-// minHeight
-<Box minHeight={512} />
-<Box minHeight={[ 384, 512 ]} />
-
-// size (width & height)
-<Box size={32} />
-<Box size={[ 32, 48 ]} />
-
-// overflow
-<Box overflow='hidden' />
-
-// overflowX
-<Box overflowX='hidden' />
-
-// overflowY
-<Box overflowY='hidden' />
+```ts
+export type DesygnaSystemLayoutProps = {
+  width?: DesygnaGenericProp<CSS.Properties["width"] | DesygnaThemeSize | number>;
+  height?: DesygnaGenericProp<CSS.Properties["height"] | DesygnaThemeSize | number>;
+  w?: DesygnaGenericProp<CSS.Properties["width"] | DesygnaThemeSize | number>;
+  h?: DesygnaGenericProp<CSS.Properties["height"] | DesygnaThemeSize | number>;
+  minWidth?: DesygnaGenericProp<CSS.Properties["minWidth"] | DesygnaThemeSize | number>;
+  minW?: DesygnaGenericProp<CSS.Properties["minWidth"] | DesygnaThemeSize | number>;
+  maxWidth?: DesygnaGenericProp<CSS.Properties["maxWidth"] | DesygnaThemeSize | number>;
+  maxW?: DesygnaGenericProp<CSS.Properties["maxWidth"] | DesygnaThemeSize | number>;
+  minHeight?: DesygnaGenericProp<CSS.Properties["minHeight"] | DesygnaThemeSize | number>;
+  minH?: DesygnaGenericProp<CSS.Properties["minHeight"] | DesygnaThemeSize | number>;
+  maxHeight?: DesygnaGenericProp<CSS.Properties["maxHeight"] | DesygnaThemeSize | number>;
+  maxH?: DesygnaGenericProp<CSS.Properties["maxHeight"] | DesygnaThemeSize | number>;
+  display?: DesygnaGenericProp<CSS.Properties["display"]>;
+  verticalAlign?: DesygnaGenericProp<CSS.Properties["verticalAlign"]>;
+  overflow?: DesygnaGenericProp<CSS.Properties["overflow"]>;
+  overflowX?: DesygnaGenericProp<CSS.Properties["overflowX"]>;
+  overflowY?: DesygnaGenericProp<CSS.Properties["overflowY"]>;
+  aspectRatio?: DesygnaGenericProp<CSS.Properties["aspectRatio"]>;
+  breakAfter?: DesygnaGenericProp<CSS.Properties["breakAfter"]>;
+  breakBefore?: DesygnaGenericProp<CSS.Properties["breakBefore"]>;
+  breakInside?: DesygnaGenericProp<CSS.Properties["breakInside"]>;
+  boxDecorationBreak?: DesygnaGenericProp<CSS.Properties["boxDecorationBreak"]>;
+  boxSizing?: DesygnaGenericProp<CSS.Properties["boxSizing"]>;
+  float?: DesygnaGenericProp<CSS.Properties["float"]>;
+  clear?: DesygnaGenericProp<CSS.Properties["clear"]>;
+  isolation?: DesygnaGenericProp<CSS.Properties["isolation"]>;
+  objectFit?: DesygnaGenericProp<CSS.Properties["objectFit"]>;
+  objectPosition?: DesygnaGenericProp<CSS.Properties["objectPosition"]>;
+  overscrollBehavior?: DesygnaGenericProp<CSS.Properties["overscrollBehavior"]>;
+  overscrollBehaviorX?: DesygnaGenericProp<CSS.Properties["overscrollBehaviorX"]>;
+  overscrollBehaviorY?: DesygnaGenericProp<CSS.Properties["overscrollBehaviorY"]>;
+  visibility?: DesygnaGenericProp<CSS.Properties["visibility"]>;
+  transform?: DesygnaGenericProp<CSS.Properties["transform"]>;
+  transformOrigin?: DesygnaGenericProp<CSS.Properties["transformOrigin"]>;
+  accentColor?: DesygnaGenericProp<CSS.Properties["accentColor"]>;
+  appearance?: DesygnaGenericProp<CSS.Properties["appearance"]>;
+  cursor?: DesygnaGenericProp<CSS.Properties["cursor"]>;
+  caretColor?: DesygnaGenericProp<CSS.Properties["caretColor"]>;
+  pointerEvents?: DesygnaGenericProp<CSS.Properties["pointerEvents"]>;
+  resize?: DesygnaGenericProp<CSS.Properties["resize"]>;
+  scrollBehavior?: DesygnaGenericProp<CSS.Properties["scrollBehavior"]>;
+  scrollMargin?: DesygnaGenericProp<CSS.Properties["scrollMargin"]>;
+  scrollPadding?: DesygnaGenericProp<CSS.Properties["scrollPadding"]>;
+  scrollSnapAlign?: DesygnaGenericProp<CSS.Properties["scrollSnapAlign"]>;
+  scrollSnapStop?: DesygnaGenericProp<CSS.Properties["scrollSnapStop"]>;
+  scrollSnapType?: DesygnaGenericProp<CSS.Properties["scrollSnapType"]>;
+  touchAction?: DesygnaGenericProp<CSS.Properties["touchAction"]>;
+  userSelect?: DesygnaGenericProp<CSS.Properties["userSelect"]>;
+  willChange?: DesygnaGenericProp<CSS.Properties["willChange"]>;
+  fill?: DesygnaGenericProp<CSS.Properties["fill"] | DesygnaThemeColor>;
+  stroke?: DesygnaGenericProp<CSS.Properties["stroke"]>;
+  strokeWidth?: DesygnaGenericProp<CSS.Properties["strokeWidth"]>;
+};
 ```
