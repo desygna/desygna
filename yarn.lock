@@ -1665,31 +1665,45 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@desygna/desygna-absolute@4.0.0-dev.0, @desygna/desygna-absolute@workspace:packages/components/absolute":
+"@desygna/desygna-absolute@4.0.0-pre.2, @desygna/desygna-absolute@workspace:packages/components/absolute":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-absolute@workspace:packages/components/absolute"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-dev.0
+    "@desygna/desygna-core": 4.0.0-pre.2
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-box@4.0.0-dev.0, @desygna/desygna-box@workspace:packages/components/box":
+"@desygna/desygna-box@4.0.0-pre.2, @desygna/desygna-box@workspace:packages/components/box":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-box@workspace:packages/components/box"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-dev.0
+    "@desygna/desygna-core": 4.0.0-pre.2
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-button@4.0.0-dev.0, @desygna/desygna-button@workspace:packages/components/button":
+"@desygna/desygna-button@4.0.0-pre.2, @desygna/desygna-button@workspace:packages/components/button":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-button@workspace:packages/components/button"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-dev.0
+    "@desygna/desygna-core": 4.0.0-pre.2
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-core@4.0.0-dev.0, @desygna/desygna-core@workspace:packages/core":
+"@desygna/desygna-core@npm:4.0.0-pre.2":
+  version: 4.0.0-pre.2
+  resolution: "@desygna/desygna-core@npm:4.0.0-pre.2"
+  peerDependencies:
+    "@emotion/react": ^11.10.0
+    "@emotion/styled": ^11.10.0
+    "@styled-system/should-forward-prop": ^5.1.5
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+    styled-system: ^5.1.5
+  checksum: 2b0d52fcadd0c7d6322d72ef1e5a1d5ef653e26affb3ba248a792769197b936e6f4d235f5c0ea12bb217661f75158cebb13a9a62395299990fb635d7609103da
+  languageName: node
+  linkType: hard
+
+"@desygna/desygna-core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-core@workspace:packages/core"
   dependencies:
@@ -1710,35 +1724,35 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-flex@4.0.0-dev.0, @desygna/desygna-flex@workspace:packages/components/flex":
+"@desygna/desygna-flex@4.0.0-pre.2, @desygna/desygna-flex@workspace:packages/components/flex":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-flex@workspace:packages/components/flex"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-dev.0
+    "@desygna/desygna-core": 4.0.0-pre.2
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-grid@4.0.0-dev.0, @desygna/desygna-grid@workspace:packages/components/grid":
+"@desygna/desygna-grid@4.0.0-pre.2, @desygna/desygna-grid@workspace:packages/components/grid":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-grid@workspace:packages/components/grid"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-dev.0
+    "@desygna/desygna-core": 4.0.0-pre.2
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-paragraph@4.0.0-dev.0, @desygna/desygna-paragraph@workspace:packages/components/paragraph":
+"@desygna/desygna-paragraph@4.0.0-pre.2, @desygna/desygna-paragraph@workspace:packages/components/paragraph":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-paragraph@workspace:packages/components/paragraph"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-dev.0
+    "@desygna/desygna-core": 4.0.0-pre.2
   languageName: unknown
   linkType: soft
 
-"@desygna/desygna-span@4.0.0-dev.0, @desygna/desygna-span@workspace:packages/components/span":
+"@desygna/desygna-span@4.0.0-pre.2, @desygna/desygna-span@workspace:packages/components/span":
   version: 0.0.0-use.local
   resolution: "@desygna/desygna-span@workspace:packages/components/span"
   dependencies:
-    "@desygna/desygna-core": 4.0.0-dev.0
+    "@desygna/desygna-core": 4.0.0-pre.2
   languageName: unknown
   linkType: soft
 
@@ -1746,14 +1760,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@desygna/desygna@workspace:packages/desygna"
   dependencies:
-    "@desygna/desygna-absolute": 4.0.0-dev.0
-    "@desygna/desygna-box": 4.0.0-dev.0
-    "@desygna/desygna-button": 4.0.0-dev.0
-    "@desygna/desygna-core": 4.0.0-dev.0
-    "@desygna/desygna-flex": 4.0.0-dev.0
-    "@desygna/desygna-grid": 4.0.0-dev.0
-    "@desygna/desygna-paragraph": 4.0.0-dev.0
-    "@desygna/desygna-span": 4.0.0-dev.0
+    "@desygna/desygna-absolute": 4.0.0-pre.2
+    "@desygna/desygna-box": 4.0.0-pre.2
+    "@desygna/desygna-button": 4.0.0-pre.2
+    "@desygna/desygna-core": 4.0.0-pre.2
+    "@desygna/desygna-flex": 4.0.0-pre.2
+    "@desygna/desygna-grid": 4.0.0-pre.2
+    "@desygna/desygna-paragraph": 4.0.0-pre.2
+    "@desygna/desygna-span": 4.0.0-pre.2
     "@emotion/react": ^11.10.0
     "@emotion/styled": ^11.10.0
     "@styled-system/css": ^5.1.5
