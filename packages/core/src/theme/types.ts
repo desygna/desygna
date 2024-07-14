@@ -8,13 +8,7 @@ export interface DesygnaTheme {
   animations?: {
     [key: string]: string;
   };
-  colors?: {
-    [key: string]: DesygnaThemeRecord;
-  };
   breakpoints?: {
-    [key: string]: string;
-  };
-  mediaQueries?: {
     [key: string]: string;
   };
   borders?: {
@@ -24,6 +18,9 @@ export interface DesygnaTheme {
     [key: string]: DesygnaThemeRecord;
   };
   borderStyles?: {
+    [key: string]: DesygnaThemeRecord;
+  };
+  colors?: {
     [key: string]: DesygnaThemeRecord;
   };
   fonts?: {
